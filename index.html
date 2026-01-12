@@ -10,53 +10,50 @@
 
 <!-- ================= TOP INFO BAR ================= -->
 <div class="top-bar">
-    <div class="container">
-        <span>📞 +27 62 645 6655 | Mon – Fri: 8am – 5pm</span>
-        <span>Clayville, South Africa</span>
-    </div>
-</div>
-
-<!-- ================= HEADER / NAVIGATION ================= -->
-<header class="site-header">
-
-    <nav class="navbar">
         <div class="container">
-
-            <!-- Logo -->
-            <a href="#" class="brand">
-                <!-- Replace text with image later if needed -->
-                <!-- <img src="images/logo.png" alt="Mmanda’s Sauces"> -->
-                Mmanda’s Sauces
-            </a>
-
-            <!-- Navigation -->
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <!-- Header Actions (future-ready) -->
-            <div class="header-actions">
-                <a href="#" class="account-link">My Account</a>
-                <a href="#" class="cart-link">Cart (0)</a>
+            <span class="contact-info"> +27 62 645 6655 | Mon – Fri: 8 AM – 5 PM</span>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
             </div>
+        </div>
+    </div>
 
+    <!-- Navigation -->
+    <nav class="main-nav container">
+        <a href="/" class="logo">
+            <!-- If you have a logo image, swap this text for an <img> tag -->
+            <img src="images/mmandas-logo.png" alt="Mmandas Sauce Logo">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li class="has-dropdown">
+                <a href="/shop">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/shop?sauces">Sauces</a></li>
+                    <li><a href="/shop?spices">Spices</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+            <a href="/my-account">My Account</a>
+            <a href="/cart" class="cart-link">Cart (0)</a>
         </div>
     </nav>
 
-    <!-- ================= HERO (CONNECTED TO HEADER) ================= -->
-    <section id="hero" class="hero-section">
-        <div class="container">
-            <h1>Perfection in Sauces & Spice</h1>
-            <p>Crafted Heat. Pure Flavor.</p>
-            <a href="#products" class="btn">Shop Our Sauces</a>
+    <!-- Optional Hero / Banner -->
+    <div class="header-hero">
+        <div class="hero-overlay">
+            <h1>Crafted heat with pure flavor. No artificial ingredients, no preservatives</h1>
+            <p>Spice up your meals with bold Mmandas Sauce flavours.</p>
         </div>
-    </section>
+    </div>
 
 </header>
-
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about-section container">
     <h2>About Us</h2>
