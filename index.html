@@ -1,147 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Mmanda’s Sauces | Premium Peri-Peri</title>
-
-    <!-- SEO -->
-    <meta name="description" content="Mmanda’s Sauces – Premium handcrafted peri-peri sauces made with authentic flavour and no preservatives.">
-    <meta name="keywords" content="peri peri sauce, hot sauce South Africa, handmade sauces">
-    <meta name="author" content="Mmanda’s Sauces">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mmanda’s Sauces</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ================= TOP INFO BAR ================= -->
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <span>+27 62 645 6655 | Mon – Fri: 8 AM – 5 PM</span>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            </div>
-        </div>
+<!-- Header / Navbar -->
+<header class="navbar">
+    <div class="container">
+        <a href="#" class="brand">
+            <img src="images/logo.png" alt="Mmanda’s Sauces" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://wa.me/27626456655" class="whatsapp-link" target="_blank">WhatsApp</a></li>
+        </ul>
     </div>
+</header>
 
-    <!-- ================= NAVIGATION ================= -->
-    <nav class="main-nav">
-        <div class="container nav-inner">
-            <a href="/" class="logo">
-                <img src="images/mmandas-logo.png" alt="Mmanda’s Sauce Logo">
-            </a>
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+    <div class="hero-overlay">
+        <h1>Welcome to Mmanda’s Sauces</h1>
+        <p>Premium spicy sauces crafted in South Africa</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </div>
+</section>
 
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li class="has-dropdown">
-                    <a href="#products">Shop</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#products">Sauces</a></li>
-                        <li><a href="#products">Spices</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="header-actions">
-                <a href="/my-account">My Account</a>
-                <a href="/cart">Cart (0)</a>
-                <a href="https://wa.me/27626456655" class="whatsapp-btn">Order via WhatsApp</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ================= HERO ================= -->
-    <header class="header-hero">
-        <div class="hero-overlay">
-            <h1>Crafted Heat with Pure Flavor</h1>
-            <p>No artificial ingredients. No preservatives. Just bold taste.</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </div>
-    </header>
-
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="about-section container">
+<!-- About Section -->
+<section id="about" class="about-section">
+    <img src="images/about-image.jpg" alt="About Mmanda’s Sauces" class="about-image">
+    <div class="about-text">
         <h2>About Us</h2>
         <p>
-            Mmanda’s Sauces is a family-crafted brand blending premium ingredients
-            to create sauces with bold flavour and handcrafted heat.
-            Every bottle is made with authenticity, passion, and uncompromised quality.
+            Mmanda’s Sauces delivers high-quality, spicy sauces with natural ingredients.
+            Our passion is flavor — making every meal an unforgettable experience.
         </p>
-    </section>
+    </div>
+</section>
 
-    <!-- ================= PRODUCTS ================= -->
-    <section id="products" class="product-grid container">
-        <h2>Our Products</h2>
-        <div class="products-wrapper">
-            <div class="product-card">
-                <img src="images/plain-hot.jpg" alt="Plain Hot Sauce">
-                <h3>Plain Hot Sauce</h3>
-                <p><strong>R35</strong> — Pure handcrafted heat with no preservatives.</p>
-                <button class="btn">Order Now</button>
-            </div>
+<!-- Products Section -->
+<section id="products" class="product-grid">
+    <h2>Our Products</h2>
+    <div class="product-card">
+        <img src="images/product1.jpg" alt="Hot Sauce 1">
+        <h3>Hot Sauce 1</h3>
+        <p>Spicy & tangy for all dishes</p>
+    </div>
+    <div class="product-card">
+        <img src="images/product2.jpg" alt="Hot Sauce 2">
+        <h3>Hot Sauce 2</h3>
+        <p>Rich flavor with fiery kick</p>
+    </div>
+</section>
 
-            <div class="product-card">
-                <img src="images/creamy-hot.jpg" alt="Creamy Hot Sauce">
-                <h3>Creamy Hot Sauce</h3>
-                <p><strong>R45</strong> — Smooth, spicy and rich flavour.</p>
-                <button class="btn">Order Now</button>
-            </div>
-        </div>
-    </section>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-overlay">
+        <div class="contact-container">
 
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="contact-section">
-        <div class="contact-overlay">
-            <div class="contact-container">
-                <h2>Need Sauce?</h2>
-                <p class="contact-subtitle">
-                    Get in touch with Mmanda’s Sauces — we’d love to hear from you.
-                </p>
+            <h2>Need Sauce?</h2>
+            <p class="contact-subtitle">
+                Get in touch with Mmanda’s Sauces — we’d love to hear from you.
+            </p>
 
-                <div class="contact-details">
-                    <div>
-                        <strong>Email</strong>
-                        <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a>
-                    </div>
-                    <div>
-                        <strong>Phone</strong>
-                        <span>+27 62 645 6655</span>
-                    </div>
-                    <div>
-                        <strong>Location</strong>
-                        <span>Clayville, South Africa</span>
-                    </div>
+            <div class="contact-details">
+                <div>
+                    <strong>Email</strong>
+                    <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a>
                 </div>
 
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+                <div>
+                    <strong>Phone</strong>
+                    <a href="tel:+27626456655">+27 62 645 6655</a>
+                </div>
 
-                <div class="social-links footer-social">
-                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
-                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <div>
+                    <strong>Location</strong>
+                    <span>Clayville, South Africa</span>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Mmanda’s Sauces. All rights reserved.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p class="copyright">
+                &copy; 2026 Mmanda’s Sauces. All rights reserved.
+            </p>
+
         </div>
-    </footer>
+    </div>
+</section>
 
 </body>
 </html>
