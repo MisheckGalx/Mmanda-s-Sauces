@@ -3,84 +3,71 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mmanda's Sauces | Plain Hot</title>
-
-    <!-- Optional: Premium font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Mmanda's Sauces | Home</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- =====================
-         HERO / BRAND HEADER
-    ====================== -->
-    <header>
-        <h1>Mmanda's Sauces</h1>
-        <p>Crafted Heat. Pure Flavor.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="brand">Mmanda's Sauces</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero" class="hero-section">
+        <div class="container">
+            <h1>Perfection in Sauces & Spice</h1>
+            <p>Crafted Heat. Pure Flavor.</p>
+            <a href="#products" class="btn">Shop Our Sauces</a>
+        </div>
     </header>
 
-    <!-- =====================
-         PRODUCT SHOWCASE
-    ====================== -->
-    <main>
-        <section class="product">
+    <!-- About -->
+    <section id="about" class="about-section container">
+        <h2>About Us</h2>
+        <p>
+            Mmanda’s Sauces is a family-crafted brand blending premium ingredients to create sauces with bold flavour
+            and handcrafted heat. We believe every meal deserves authentic taste and uncompromised quality.
+        </p>
+    </section>
 
-            <!-- Product Image -->
-            <img 
-                src="product.jpg"
-                alt="Mmanda's Plain Hot Sauce Bottle"
-                class="product-image"
-                loading="lazy"
-            />
+    <!-- Products -->
+    <section id="products" class="product-grid container">
+        <h2>Our Products</h2>
 
-            <!-- Product Details -->
-            <article class="product-info">
-                <h2>Plain Hot Sauce</h2>
+        <div class="product-card">
+            <img src="plain-hot.jpg" alt="Plain Hot Sauce">
+            <h3>Plain Hot Sauce</h3>
+            <p>R35 — Pure handcrafted heat with no preservatives.</p>
+            <button class="btn">Order Now</button>
+        </div>
 
-                <p class="price">
-                    <strong>Price:</strong> R35
-                </p>
+        <div class="product-card">
+            <img src="creamy-hot.jpg" alt="Creamy Hot Sauce">
+            <h3>Creamy Hot Sauce</h3>
+            <p>R45 — Smooth, spicy and rich flavour.</p>
+            <button class="btn">Order Now</button>
+        </div>
 
-                <p class="description">
-                    Crafted heat with pure flavor. No artificial ingredients. 
-                    No preservatives. Available in <strong>Plain Hot</strong> and 
-                    <strong>Creamy Hot</strong>.
-                </p>
+        <!-- Add more products -->
+    </section>
 
-                <p class="availability">
-                    <strong>Availability:</strong> In and around Clayville. Delivery available.
-                </p>
-
-                <div class="features">
-                    <strong>Features:</strong>
-                    <ul>
-                        <li>Crafted heat with pure flavour</li>
-                        <li>Perfect for elevating everyday meals</li>
-                        <li>Handcrafted using natural ingredients</li>
-                    </ul>
-                </div>
-
-                <button class="order-button">
-                    Order Now
-                </button>
-            </article>
-
-        </section>
-    </main>
-
-    <!-- =====================
-         FOOTER
-    ====================== -->
-    <footer>
+    <!-- Contact -->
+    <footer id="contact" class="footer container">
         <p>
             Contact: 
-            <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a> | 
+            <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a> |
             +27 62 645 6655 | Clayville, South Africa
         </p>
-        <p>&copy; 2026 Mmanda's Sauces. All rights reserved.</p>
+        <p>&copy; 2026 Mmanda’s Sauces. All rights reserved.</p>
     </footer>
 
 </body>
