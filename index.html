@@ -3,57 +3,69 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Mmanda’s Sauces | Premium Peri-Peri</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Mmanda’s Sauces – Premium handcrafted peri-peri sauces made with authentic flavour and no preservatives.">
+    <meta name="keywords" content="peri peri sauce, hot sauce South Africa, handmade sauces">
+    <meta name="author" content="Mmanda’s Sauces">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <!-- ================= TOP INFO BAR ================= -->
 <div class="top-bar">
-        <div class="container">
-            <span class="contact-info"> +27 62 645 6655 | Mon – Fri: 8 AM – 5 PM</span>
-            <div class="social-links">
-                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            </div>
+    <div class="container top-bar-inner">
+        <span>+27 62 645 6655 | Mon – Fri: 8 AM – 5 PM</span>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </div>
     </div>
+</div>
 
-    <!-- Navigation -->
-    <nav class="main-nav container">
+<!-- ================= NAVIGATION ================= -->
+<nav class="main-nav">
+    <div class="container nav-inner">
         <a href="/" class="logo">
-            <!-- If you have a logo image, swap this text for an <img> tag -->
             <img src="images/mmandas-logo.png" alt="Mmandas Sauce Logo">
         </a>
 
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About us</a></li>
+            <li><a href="#about">About Us</a></li>
             <li class="has-dropdown">
-                <a href="/shop">Shop</a>
+                <a href="#products">Shop</a>
                 <ul class="dropdown-menu">
-                    <li><a href="/shop?sauces">Sauces</a></li>
-                    <li><a href="/shop?spices">Spices</a></li>
+                    <li><a href="#products">Sauces</a></li>
+                    <li><a href="#products">Spices</a></li>
                 </ul>
             </li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="header-actions">
             <a href="/my-account">My Account</a>
-            <a href="/cart" class="cart-link">Cart (0)</a>
-        </div>
-    </nav>
-
-    <!-- Optional Hero / Banner -->
-    <div class="header-hero">
-        <div class="hero-overlay">
-            <h1>Crafted heat with pure flavor. No artificial ingredients, no preservatives</h1>
-            <p>Spice up your meals with bold Mmandas Sauce flavours.</p>
+            <a href="/cart">Cart (0)</a>
+            <a href="https://wa.me/27626456655" class="whatsapp-btn">Order via WhatsApp</a>
         </div>
     </div>
+</nav>
 
+<!-- ================= HERO ================= -->
+<header class="header-hero">
+    <div class="hero-overlay">
+        <h1>Crafted heat with pure flavor</h1>
+        <p>No artificial ingredients. No preservatives. Just bold taste.</p>
+    </div>
 </header>
+
 <!-- ================= ABOUT ================= -->
 <section id="about" class="about-section container">
     <h2>About Us</h2>
@@ -68,18 +80,20 @@
 <section id="products" class="product-grid container">
     <h2>Our Products</h2>
 
-    <div class="product-card">
-        <img src="images/plain-hot.jpg" alt="Plain Hot Sauce">
-        <h3>Plain Hot Sauce</h3>
-        <p>R35 — Pure handcrafted heat with no preservatives.</p>
-        <button class="btn">Order Now</button>
-    </div>
+    <div class="products-wrapper">
+        <div class="product-card">
+            <img src="images/plain-hot.jpg" alt="Plain Hot Sauce">
+            <h3>Plain Hot Sauce</h3>
+            <p><strong>R35</strong> — Pure handcrafted heat with no preservatives.</p>
+            <button class="btn">Order Now</button>
+        </div>
 
-    <div class="product-card">
-        <img src="images/creamy-hot.jpg" alt="Creamy Hot Sauce">
-        <h3>Creamy Hot Sauce</h3>
-        <p>R45 — Smooth, spicy and rich flavour.</p>
-        <button class="btn">Order Now</button>
+        <div class="product-card">
+            <img src="images/creamy-hot.jpg" alt="Creamy Hot Sauce">
+            <h3>Creamy Hot Sauce</h3>
+            <p><strong>R45</strong> — Smooth, spicy and rich flavour.</p>
+            <button class="btn">Order Now</button>
+        </div>
     </div>
 </section>
 
@@ -98,12 +112,10 @@
                     <strong>Email</strong>
                     <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a>
                 </div>
-
                 <div>
                     <strong>Phone</strong>
                     <span>+27 62 645 6655</span>
                 </div>
-
                 <div>
                     <strong>Location</strong>
                     <span>Clayville, South Africa</span>
@@ -117,26 +129,19 @@
                 <button type="submit">Send Message</button>
             </form>
 
-            <!-- SOCIAL MEDIA -->
-            <div class="social-links">
-                <a href="#" aria-label="Instagram">
-                    <img src="images/instagram.svg" alt="Instagram">
-                </a>
-                <a href="#" aria-label="Facebook">
-                    <img src="images/facebook.svg" alt="Facebook">
-                </a>
+            <div class="social-links footer-social">
+                <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
             </div>
 
-        </div> <!-- end contact-container -->
-    </div> <!-- end contact-overlay -->
+        </div>
+    </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="container">
-        <p class="copyright">
-            &copy; 2026 Mmanda’s Sauces. All rights reserved.
-        </p>
+        <p>&copy; 2026 Mmanda’s Sauces. All rights reserved.</p>
     </div>
 </footer>
 
