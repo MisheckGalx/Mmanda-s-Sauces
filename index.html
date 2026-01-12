@@ -3,64 +3,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mmanda's Sauces | Home</title>
+    <title>Mmanda’s Sauces | Premium Peri-Peri</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- Navigation -->
+<!-- ================= TOP INFO BAR ================= -->
+<div class="top-bar">
+    <div class="container">
+        <span>📞 +27 62 645 6655 | Mon – Fri: 8am – 5pm</span>
+        <span>Clayville, South Africa</span>
+    </div>
+</div>
+
+<!-- ================= HEADER / NAVIGATION ================= -->
+<header class="site-header">
+
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="brand">Mmanda's Sauces</a>
+
+            <!-- Logo -->
+            <a href="#" class="brand">
+                <!-- Replace text with image later if needed -->
+                <!-- <img src="images/logo.png" alt="Mmanda’s Sauces"> -->
+                Mmanda’s Sauces
+            </a>
+
+            <!-- Navigation -->
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#products">Shop</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <!-- Header Actions (future-ready) -->
+            <div class="header-actions">
+                <a href="#" class="account-link">My Account</a>
+                <a href="#" class="cart-link">Cart (0)</a>
+            </div>
+
         </div>
     </nav>
 
-    <!-- Hero -->
-    <header id="hero" class="hero-section">
+    <!-- ================= HERO (CONNECTED TO HEADER) ================= -->
+    <section id="hero" class="hero-section">
         <div class="container">
             <h1>Perfection in Sauces & Spice</h1>
             <p>Crafted Heat. Pure Flavor.</p>
             <a href="#products" class="btn">Shop Our Sauces</a>
         </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about-section container">
-        <h2>About Us</h2>
-        <p>
-            Mmanda’s Sauces is a family-crafted brand blending premium ingredients to create sauces with bold flavour
-            and handcrafted heat. We believe every meal deserves authentic taste and uncompromised quality.
-        </p>
     </section>
 
-    <!-- Products -->
-    <section id="products" class="product-grid container">
-        <h2>Our Products</h2>
+</header>
 
-        <div class="product-card">
-            <img src="plain-hot.jpg" alt="Plain Hot Sauce">
-            <h3>Plain Hot Sauce</h3>
-            <p>R35 — Pure handcrafted heat with no preservatives.</p>
-            <button class="btn">Order Now</button>
-        </div>
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about-section container">
+    <h2>About Us</h2>
+    <p>
+        Mmanda’s Sauces is a family-crafted brand blending premium ingredients
+        to create sauces with bold flavour and handcrafted heat.
+        Every bottle is made with authenticity, passion, and uncompromised quality.
+    </p>
+</section>
 
-        <div class="product-card">
-            <img src="creamy-hot.jpg" alt="Creamy Hot Sauce">
-            <h3>Creamy Hot Sauce</h3>
-            <p>R45 — Smooth, spicy and rich flavour.</p>
-            <button class="btn">Order Now</button>
-        </div>
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="product-grid container">
+    <h2>Our Products</h2>
 
-        <!-- Add more products -->
-    </section>
+    <div class="product-card">
+        <img src="images/plain-hot.jpg" alt="Plain Hot Sauce">
+        <h3>Plain Hot Sauce</h3>
+        <p>R35 — Pure handcrafted heat with no preservatives.</p>
+        <button class="btn">Order Now</button>
+    </div>
 
-    <!-- Contact -->
+    <div class="product-card">
+        <img src="images/creamy-hot.jpg" alt="Creamy Hot Sauce">
+        <h3>Creamy Hot Sauce</h3>
+        <p>R45 — Smooth, spicy and rich flavour.</p>
+        <button class="btn">Order Now</button>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-section">
     <div class="contact-overlay">
         <div class="contact-container">
@@ -94,10 +120,28 @@
                 <button type="submit">Send Message</button>
             </form>
 
-            <p class="copyright">
-                &copy; 2026 Mmanda’s Sauces. All rights reserved.
-            </p>
+            <!-- SOCIAL MEDIA -->
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+            </div>
 
-        </div>
-    </div>
+        </div> <!-- end contact-container -->
+    </div> <!-- end contact-overlay -->
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p class="copyright">
+            &copy; 2026 Mmanda’s Sauces. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
