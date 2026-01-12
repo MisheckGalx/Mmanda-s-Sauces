@@ -335,6 +335,26 @@ body {
 }
 
 /* =========================
+   SOCIALS
+========================= */
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-links img {
+    width: 26px;
+    opacity: 0.8;
+    transition: opacity 0.25s ease;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
+
+/* =========================
    FOOTER
 ========================= */
 .footer {
