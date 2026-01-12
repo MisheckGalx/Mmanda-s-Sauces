@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mmanda's Sauces - Plain Hot</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mmanda's Sauces | Plain Hot</title>
+
+    <!-- Optional: Premium font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+    <!-- =====================
+         HERO / BRAND HEADER
+    ====================== -->
     <header>
         <h1>Mmanda's Sauces</h1>
         <p>Crafted Heat. Pure Flavor.</p>
     </header>
-    
-    <section class="product">
-        <img src="product.jpg" alt="Mmanda's Plain Hot Sauce" class="product-image">
-        <div class="product-info">
-            <h2>Plain Hot Sauce</h2>
-            <p><strong>Price:</strong> R35</p>
-            <p><strong>Description:</strong> Crafted heat with pure flavor. No artificial ingredients, no preservatives. Available in Plain Hot and Creamy Hot.</p>
-            <p><strong>Availability:</strong> In and around Clayville. Can deliver!</p>
-            <p><strong>Features:</strong>
-                <ul>
-                    <li>Crafted heat and Pure flavour</li>
-                    <li>Perfect for adding spice to your meals</li>
-                    <li>Handcrafted with natural ingredients</li>
-                </ul>
-            </p>
-            <button class="order-button">Order Now</button> <!-- You can link this to an email or form later -->
-        </div>
-    </section>
-    
+
+    <!-- =====================
+         PRODUCT SHOWCASE
+    ====================== -->
+    <main>
+        <section class="product">
+
+            <!-- Product Image -->
+            <img 
+                src="product.jpg"
+                alt="Mmanda's Plain Hot Sauce Bottle"
+                class="product-image"
+                loading="lazy"
+            />
+
+            <!-- Product Details -->
+            <article class="product-info">
+                <h2>Plain Hot Sauce</h2>
+
+                <p class="price">
+                    <strong>Price:</strong> R35
+                </p>
+
+                <p class="description">
+                    Crafted heat with pure flavor. No artificial ingredients. 
+                    No preservatives. Available in <strong>Plain Hot</strong> and 
+                    <strong>Creamy Hot</strong>.
+                </p>
+
+                <p class="availability">
+                    <strong>Availability:</strong> In and around Clayville. Delivery available.
+                </p>
+
+                <div class="features">
+                    <strong>Features:</strong>
+                    <ul>
+                        <li>Crafted heat with pure flavour</li>
+                        <li>Perfect for elevating everyday meals</li>
+                        <li>Handcrafted using natural ingredients</li>
+                    </ul>
+                </div>
+
+                <button class="order-button">
+                    Order Now
+                </button>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- =====================
+         FOOTER
+    ====================== -->
     <footer>
-        <p>Contact: mmanda@sauces.com | +27 62 645 6655 | Clayville, South Africa</p>
+        <p>
+            Contact: 
+            <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a> | 
+            +27 62 645 6655 | Clayville, South Africa
+        </p>
         <p>&copy; 2026 Mmanda's Sauces. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
