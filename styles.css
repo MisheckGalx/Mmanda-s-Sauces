@@ -1,20 +1,39 @@
+/* ===== Site Header ===== */
+.site-header {
+    width: 100%;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
 /* =========================
    TOP INFO BAR
 ========================= */
 .top-bar {
-    background: rgba(0, 0, 0, 0.85);
-    color: var(--text-muted);
+    background: #f8f8f8;
+    color: #222;
+    padding: 8px 0;
     font-size: 14px;
 }
 
 .top-bar .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 8px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.top-bar .contact-info {
+    font-weight: bold;
+}
+
+.top-bar .social-links a {
+    color: #0071bc;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.top-bar .social-links a:hover {
+    text-decoration: underline;
+}
+
 /* =========================
    ROOT VARIABLES
 ========================= */
@@ -43,99 +62,105 @@ body {
 /* =========================
    NAVBAR
 ========================= */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background: rgba(0,0,0,0.65);
-    backdrop-filter: blur(16px);
-}
-
-.navbar .container {
-    max-width: 1200px;
-    margin: auto;
+.main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 20px;
+    padding: 16px 0;
 }
 
-.brand {
-    font-size: 1.7em;
-    font-weight: 800;
-    color: var(--orange);
-    text-decoration: none;
-    white-space: nowrap;
+.main-nav .logo img {
+    max-height: 60px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 28px;
+    gap: 24px;
     margin: 0;
     padding: 0;
 }
 
+.nav-links li {
+    position: relative;
+}
+
 .nav-links a {
-    color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    opacity: 0.9;
+    color: #333;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
-    opacity: 1;
+    color: var(--orange);
+}
+
+.has-dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.has-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2f2f2;
 }
 
 /* =========================
    HEADER ACTIONS
 ========================= */
-.header-actions {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
 .header-actions a {
-    color: #fff;
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: 500;
-    opacity: 0.9;
-}
-
-.header-actions a:hover {
-    opacity: 1;
+    color: #333;
+    font-weight: bold;
 }
 
 .cart-link {
     color: var(--orange);
-    font-weight: 600;
 }
 
 /* =========================
    HERO
 ========================= */
-.hero-section {
-    padding: 110px 20px 90px; /* updated top padding */
+.header-hero {
+    background: url("images/plain-banner.jpg") center/cover no-repeat;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background-color: #000; /* black background for elegance */
-    color: #fff; /* default text color white */
+    color: #fff;
+    position: relative;
 }
 
-.hero-section .container {
-    max-width: 900px;
-    margin: auto;
+.header-hero .hero-overlay {
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
 }
 
-.hero-section h1 {
-    font-size: 3.2em; /* updated font size */
+.header-hero h1 {
+    font-size: 36px;
     margin-bottom: 10px;
-    text-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-.hero-section p {
-    color: #f0f0f0; /* muted light color for subtitle */
-    font-size: 1.2em;
+.header-hero p {
+    font-size: 18px;
 }
 
 /* =========================
