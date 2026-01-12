@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda's Sauces - Plain Hot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Amanda's Sauces</h1>
+        <p>Crafted Heat. Pure Flavor.</p>
+    </header>
+    
+    <section class="product">
+        <img src="product.jpg" alt="Mmanda's Plain Hot Sauce" class="product-image">
+        <div class="product-info">
+            <h2>Plain Hot Sauce</h2>
+            <p><strong>Price:</strong> R35</p>
+            <p><strong>Description:</strong> Crafted heat with pure flavor. No artificial ingredients, no preservatives. Available in Plain Hot and Creamy Hot.</p>
+            <p><strong>Availability:</strong> In and around Clayville. Can deliver!</p>
+            <p><strong>Features:</strong>
+                <ul>
+                    <li>South African made (proudly featuring the SA flag)</li>
+                    <li>Perfect for adding spice to your meals</li>
+                    <li>Handcrafted with natural ingredients</li>
+                </ul>
+            </p>
+            <button class="order-button">Order Now</button> <!-- You can link this to an email or form later -->
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact: mmanda@sauces.com | +27 62 645 6655 | Clayville, South Africa</p>
+        <p>&copy; 2026 Mmanda's Sauces. All rights reserved.</p>
+    </footer>
+</body>
+</html>
