@@ -1,3 +1,6 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
 :root {
     --orange: #ff6600;
     --orange-dark: #e65c00;
@@ -6,6 +9,9 @@
     --text-muted: #bdbdbd;
 }
 
+/* =========================
+   GLOBAL RESET
+========================= */
 * {
     box-sizing: border-box;
 }
@@ -17,7 +23,9 @@ body {
     color: #fff;
 }
 
-/* ---------- NAV ---------- */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
     position: sticky;
     top: 0;
@@ -56,7 +64,9 @@ body {
     opacity: 1;
 }
 
-/* ---------- HERO ---------- */
+/* =========================
+   HERO
+========================= */
 .hero-section {
     padding: 90px 20px;
     text-align: center;
@@ -90,7 +100,9 @@ body {
     transform: translateY(-4px);
 }
 
-/* ---------- ABOUT ---------- */
+/* =========================
+   ABOUT
+========================= */
 .about-section {
     padding: 70px 20px;
     max-width: 900px;
@@ -108,7 +120,9 @@ body {
     line-height: 1.8;
 }
 
-/* ---------- PRODUCTS ---------- */
+/* =========================
+   PRODUCTS
+========================= */
 .product-grid {
     padding: 80px 20px;
     text-align: center;
@@ -148,14 +162,122 @@ body {
 
 .product-card h3 {
     margin-top: 20px;
-    color: #fff;
 }
 
 .product-card p {
     color: var(--text-muted);
 }
 
-/* ---------- FOOTER ---------- */
+/* =========================
+   CONTACT (UPGRADED)
+========================= */
+.contact-section {
+    background: url("images/chilli-background.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact-overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: var(--text-muted);
+}
+
+/* Contact Details */
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-details div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.contact-details strong {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    color: var(--orange);
+}
+
+.contact-details a,
+.contact-details span {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+    color: #fff;
+    padding: 14px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(255,102,0,0.45);
+    transition: transform 0.25s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   FOOTER
+========================= */
 .footer {
     background: #080a10;
     padding: 30px 20px;
@@ -168,9 +290,25 @@ body {
     text-decoration: none;
 }
 
-/* ---------- MOBILE ---------- */
+.copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
     .product-card {
         width: 90%;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-container h2 {
+        font-size: 32px;
     }
 }
