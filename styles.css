@@ -61,62 +61,53 @@ body {
 }
 
 /* WhatsApp Link */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #1abc9c;
-    color: #fff;
-    padding: 14px 20px;
-    border-radius: 50px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.2s;
-    z-index: 1000;
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.whatsapp-btn:hover {
-    transform: scale(1.1);
+.whatsapp-top {
+  background: #1abc9c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-top:hover {
+  transform: scale(1.05);
 }
 
 /* ---------- HERO ---------- */
-.hero-section {
-    padding: 120px 20px;
-    text-align: center;
-    background: url("images/hero-bg.jpg") center/cover no-repeat;
-    position: relative;
+.hero-full {
+  height: 100vh;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.hero-overlay {
-    background: rgba(0,0,0,0.6);
-    padding: 80px 20px;
+.hero-content {
+  background: rgba(0,0,0,0.45);
+  padding: 80px;
+  border-radius: 30px;
 }
 
-.hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.hero-content h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-shadow:
+    0 2px 0 #000,
+    0 6px 20px rgba(0,0,0,0.6);
 }
 
-.hero-section p {
-    color: var(--text-muted);
-    font-size: 1.2em;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 32px;
-    background: linear-gradient(135deg, var(--red), var(--green));
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 16px;
-    font-weight: 600;
-    transition: transform 0.25s ease;
-}
-
-.btn:hover {
-    transform: translateY(-4px);
+.hero-content p {
+  font-size: 1.4rem;
+  color: #f0f0f0;
 }
 
 /* ---------- ABOUT ---------- */
@@ -143,22 +134,31 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
-.about-text {
-    flex: 1;
-    min-width: 320px;
-    text-align: left;
+.about-full {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle, #111, #000);
+}
+
+.about-wrap {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .about-text h2 {
-    color: #e63900;
-    font-size: 36px;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  color: #e63900;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 
 .about-text p {
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #f0f0f0;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #eee;
 }
 
 /* ---------- PRODUCTS ---------- */
@@ -190,6 +190,39 @@ body {
     font-weight: 700;
     color: #1abc9c; /* green for price */
     font-size: 16px;
+}
+
+.products-full {
+  height: 100vh;
+  background: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.products-full h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.products-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product-card {
+  width: 320px;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.product-card.plain {
+  background: linear-gradient(135deg, #ff7a00, #ff9a2f);
+}
+
+.product-card.creamy {
+  background: linear-gradient(135deg, #ffd000, #ffe680);
 }
 
 /* ---------- CONTACT ---------- */
@@ -294,6 +327,23 @@ body {
 
 .contact-form button:hover {
     background: var(--green);
+}
+
+.contact-compact {
+  min-height: 70vh;
+  background: url("images/chilli-background.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contact-compact h2 {
+  font-size: 2.5rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.contact-compact p {
+  font-size: 1.1rem;
+  color: #eee;
 }
 
 /* Footer */
