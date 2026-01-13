@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mmanda’s Sauces</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mmanda’s Sauces</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Header / Navbar -->
 <header class="navbar">
   <div class="container nav-flex">
-    <div class="logo-area">
-      <img src="images/logo.png" class="logo" alt="Mmanda’s Sauces">
-    </div>
+    <img src="images/logo.png" class="logo" alt="Mmanda’s Sauces Logo" />
 
     <nav class="nav-links">
       <a href="#home">Home</a>
@@ -22,13 +19,12 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="https://wa.me/27626456655" class="whatsapp-top" target="_blank">
+    <a href="https://wa.me/27626456655" class="whatsapp-top" target="_blank" aria-label="Chat on WhatsApp">
       WhatsApp
     </a>
   </div>
 </header>
 
-<!-- Hero Section -->
 <section id="home" class="hero-full">
   <div class="hero-content">
     <h1>Mmanda’s Sauces</h1>
@@ -36,10 +32,9 @@
   </div>
 </section>
 
-<!-- About Section -->
 <section id="about" class="about-full">
-  <div class="about-wrap">
-    <img src="images/about-image.jpg" class="about-img">
+  <div class="container about-wrap">
+    <img src="images/about-image.jpg" class="about-img" alt="Our Story" />
 
     <div class="about-text">
       <h2>Who Are We</h2>
@@ -52,61 +47,52 @@
   </div>
 </section>
 
-<!-- Products Section -->
-<section id="products" class="product-grid">
-    <h2>Our Products</h2>
-    <div class="product-card">
-        <img src="images/product1.jpg" alt="Hot Sauce 1">
-        <h3>Plain Hot Sauce</h3>
-        <span class="price">R35</span>
+<section id="products" class="products-full">
+  <h2>Our Products</h2>
+
+  <div class="products-row">
+    <div class="product-card plain">
+      <img src="images/product1.jpg" alt="Plain Hot Sauce" />
+      <h3>Plain Hot Sauce</h3>
+      <span class="price">R35</span>
     </div>
-    <div class="product-card">
-        <img src="images/product2.jpg" alt="Hot Sauce 2">
-        <h3>Creamy Hot Sauce</h3>
-        <span class="price">R35</span>
+
+    <div class="product-card creamy">
+      <img src="images/product2.jpg" alt="Creamy Hot Sauce" />
+      <h3>Creamy Hot Sauce</h3>
+      <span class="price">R35</span>
     </div>
+  </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact" class="contact-section">
-    <div class="contact-overlay">
-        <div class="contact-container">
+  <div class="contact-overlay">
+    <div class="contact-container">
 
-            <h2>Need Sauce?</h2>
-            <p class="contact-subtitle">
-                Get in touch with Mmanda’s Sauces — we’d love to hear from you.
-            </p>
+      <h2>Get in Touch</h2>
+      <p class="contact-subtitle">
+        Questions, orders, or collaborations — we’d love to hear from you.
+      </p>
 
-            <div class="contact-details">
-                <div>
-                    <strong>Email</strong>
-                    <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a>
-                </div>
+      <div class="contact-details">
+        <span>Email: <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a></span>
+        <span>Phone: <a href="tel:+27626456655">+27 62 645 6655</a></span>
+        <span>Location: Clayville, South Africa</span>
+      </div>
 
-                <div>
-                    <strong>Phone</strong>
-                    <a href="tel:+27626456655">+27 62 645 6655</a>
-                </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
-                <div>
-                    <strong>Location</strong>
-                    <span>Clayville, South Africa</span>
-                </div>
-            </div>
+      <p class="copyright">
+        © 2026 Mmanda’s Sauces. All rights reserved.
+      </p>
 
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-
-            <p class="copyright">
-                &copy; 2026 Mmanda’s Sauces. All rights reserved.
-            </p>
-
-        </div>
     </div>
+  </div>
 </section>
 
 </body>
