@@ -248,10 +248,18 @@ body {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 14px;
-    border-radius: 5px;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    border-radius: 8px;
     border: none;
+    padding: 14px;
     font-size: 15px;
+    backdrop-filter: blur(6px);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
 }
 
 .contact-form textarea {
