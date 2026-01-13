@@ -214,35 +214,63 @@ body {
 /* ================= CONTACT SECTION ================= */
 
 .contact-section {
-  min-height: 100vh;
-  background: url("images/chilli-background.jpg") center/cover no-repeat;
+  min-height: 60vh;
+  background: #ffffff;
+  color: #000;
   display: flex;
   align-items: center;
 }
 
 .contact-overlay {
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* lighter overlay */
+  background: #ffffff;
 }
 
 .contact-container {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 /* Headings */
 .contact-container h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: var(--red);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .contact-subtitle {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+/* Contact Info Layout */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.contact-item a,
+.contact-item span {
+  font-size: 1.2rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--red);
 }
 
 /* ================= FORM ================= */
