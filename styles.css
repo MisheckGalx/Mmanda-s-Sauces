@@ -1,77 +1,77 @@
 :root {
-    --red: #e63900;
-    --green: #1abc9c;
-    --white: #fff;
-    --black: #0c0c0c;
-    --glass: rgba(255, 255, 255, 0.08);
-    --text-muted: #bdbdbd;
+  --red: #e63900;
+  --orange: #ff7a00;
+  --yellow: #ffd000;
+  --green: #1abc9c;
+  --white: #ffffff;
+  --black: #0b0b0b;
+  --glass: rgba(255, 255, 255, 0.08);
+  --muted: #cfcfcf;
 }
 
-/* Reset */
+/* RESET */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Inter", Arial, sans-serif;
-    background: radial-gradient(circle at top, #1a1f2e, var(--black));
-    color: var(--white);
+  font-family: "Inter", Arial, sans-serif;
+  background: #000;
+  color: var(--white);
 }
 
-/* ---------- NAV ---------- */
+/* ================= NAVBAR ================= */
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: url("images/header-bg.jpg") center/cover no-repeat;
-    backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(12px);
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 20px;
-}
-
-.logo {
-    height: 60px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.nav-links a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    background: var(--red);
-}
-
-/* WhatsApp Link */
 .nav-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  padding: 16px 24px;
 }
 
+.logo {
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: var(--red);
+}
+
+/* WhatsApp Button */
 .whatsapp-top {
-  background: #1abc9c;
+  background: var(--green);
   color: #fff;
   padding: 10px 18px;
-  border-radius: 20px;
+  border-radius: 24px;
   font-weight: 600;
   text-decoration: none;
   transition: transform 0.2s ease;
@@ -81,78 +81,62 @@ body {
   transform: scale(1.05);
 }
 
-/* ---------- HERO ---------- */
+/* ================= HERO ================= */
 .hero-full {
   height: 100vh;
   background: url("images/hero-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.45);
-  padding: 80px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 90px 80px;
   border-radius: 30px;
+  text-align: center;
 }
 
 .hero-content h1 {
   font-size: 4rem;
-  letter-spacing: 2px;
-  text-shadow:
-    0 2px 0 #000,
-    0 6px 20px rgba(0,0,0,0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .hero-content p {
+  margin-top: 15px;
   font-size: 1.4rem;
-  color: #f0f0f0;
+  color: var(--muted);
 }
 
-/* ---------- ABOUT ---------- */
-.about-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-    background: url("images/about-bg.jpg") center/cover no-repeat;
-    color: #fff;
-}
-
-.about-image-container {
-    flex: 1;
-    min-width: 320px;
-    text-align: center;
-}
-
-.about-image {
-    max-width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-}
-
+/* ================= ABOUT ================= */
 .about-full {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle, #111, #000);
+  background: radial-gradient(circle at top, #111, #000);
 }
 
 .about-wrap {
-  display: flex;
-  gap: 60px;
-  align-items: center;
   max-width: 1200px;
   margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 30px;
+}
+
+.about-img {
+  width: 420px;
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.7);
 }
 
 .about-text h2 {
-  font-size: 3rem;
-  color: #e63900;
-  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  font-size: 3.2rem;
+  color: var(--red);
+  margin-bottom: 20px;
 }
 
 .about-text p {
@@ -161,215 +145,167 @@ body {
   color: #eee;
 }
 
-/* ---------- PRODUCTS ---------- */
-.product-card {
-    display: inline-block;
-    width: 280px;
-    margin: 20px;
-    padding: 25px;
-    background: rgba(255,255,255,0.05); /* transparent */
-    backdrop-filter: blur(12px);
-    border-radius: 24px;
-    transform-style: preserve-3d;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-6px) rotateX(2deg);
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.product-card .price {
-    display: block;
-    margin-top: 10px;
-    font-weight: 700;
-    color: #1abc9c; /* green for price */
-    font-size: 16px;
-}
-
-.products-full {
+/* ================= PRODUCTS ================= */
+#products {
   height: 100vh;
   background: #fff;
+  color: #000;
   text-align: center;
-  padding: 80px 20px;
+  padding: 90px 20px;
 }
 
-.products-full h2 {
+#products h2 {
   font-size: 3rem;
   margin-bottom: 60px;
 }
 
-.products-row {
+.product-grid {
   display: flex;
   justify-content: center;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .product-card {
   width: 320px;
   padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  border-radius: 28px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
 }
 
-.product-card.plain {
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Product Colors */
+.product-card:nth-child(1) {
   background: linear-gradient(135deg, #ff7a00, #ff9a2f);
 }
 
-.product-card.creamy {
+.product-card:nth-child(2) {
   background: linear-gradient(135deg, #ffd000, #ffe680);
 }
 
-/* ---------- CONTACT ---------- */
+/* ================= CONTACT ================= */
 .contact-section {
-    background: url("images/chilli-background.jpg") center/cover no-repeat;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+  min-height: 100vh;
+  background: url("images/chilli-background.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
 }
 
 .contact-overlay {
-    background: rgba(0,0,0,0.65);
-    width: 100%;
-    padding: 80px 20px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  padding: 80px 20px;
 }
 
 .contact-container {
-    max-width: 900px;
-    margin: auto;
-    color: var(--white);
-    text-align: center;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 .contact-container h2 {
-    font-size: 42px;
-    margin-bottom: 10px;
-    color: var(--red);
+  font-size: 3rem;
+  color: var(--red);
+  margin-bottom: 10px;
 }
 
 .contact-subtitle {
-    font-size: 18px;
-    margin-bottom: 40px;
-    color: var(--white);
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 40px;
 }
 
+/* Contact Details */
 .contact-details {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.contact-details div {
-    flex: 1;
-    min-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .contact-details strong {
-    display: block;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    color: var(--green);
+  display: block;
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
 }
 
 .contact-details a,
 .contact-details span {
-    font-size: 16px;
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* Contact Form */
 .contact-form {
-    display: grid;
-    gap: 15px;
-    margin-bottom: 40px;
+  display: grid;
+  gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    padding: 14px;
-    font-size: 15px;
-    backdrop-filter: blur(6px);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #bbb;
-}
-
-.contact-form textarea {
-    min-height: 120px;
-    resize: none;
+  background: var(--glass);
+  border: none;
+  padding: 14px;
+  color: #fff;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
 }
 
 .contact-form button {
-    background: var(--red);
-    color: var(--white);
-    padding: 14px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+  background: var(--red);
+  border: none;
+  padding: 14px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .contact-form button:hover {
-    background: var(--green);
+  background: var(--green);
 }
 
-.contact-compact {
-  min-height: 70vh;
-  background: url("images/chilli-background.jpg") center/cover no-repeat;
-  text-align: center;
-  padding: 100px 20px;
+/* ================= FOOTER ================= */
+.copyright {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
-.contact-compact h2 {
-  font-size: 2.5rem;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
-}
-
-.contact-compact p {
-  font-size: 1.1rem;
-  color: #eee;
-}
-
-/* Footer */
-.footer {
-    background: var(--black);
-    padding: 30px 20px;
-    text-align: center;
-    color: var(--white);
-}
-
-.footer a {
-    color: var(--red);
-    text-decoration: none;
-}
-
-/* ---------- MOBILE ---------- */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .contact-details {
-        flex-direction: column;
-        text-align: center;
-    }
-    .contact-container h2 {
-        font-size: 32px;
-    }
+  .about-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding: 60px 30px;
+  }
 }
