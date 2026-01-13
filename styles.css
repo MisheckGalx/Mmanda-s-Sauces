@@ -211,35 +211,40 @@ body {
   background: linear-gradient(135deg, #ffd000, #ffe680);
 }
 
-/* ================= CONTACT ================= */
+/* ================= CONTACT (GLASS) ================= */
 .contact-section {
   background: url("images/chilli-background.jpg") center/cover no-repeat;
-  padding: 100px 20px;
-}
-
-.contact-overlay {
-  max-width: 1000px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.65);
-  border-radius: 24px;
-  padding: 60px 40px;
+  padding: 120px 20px;
 }
 
 .contact-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 40px;
   text-align: center;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.15);
   color: #fff;
 }
 
+/* Title */
 .contact-container h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
   color: var(--red);
-  margin-bottom: 12px;
   font-weight: 700;
 }
 
+/* Subtitle */
 .contact-subtitle {
-  font-size: 1rem;
-  color: #e0e0e0;
+  font-size: 0.95rem;
+  color: #ddd;
   margin-bottom: 40px;
 }
 
@@ -247,18 +252,18 @@ body {
 .contact-details {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
 .contact-details div {
-  min-width: 180px;
+  min-width: 160px;
 }
 
 .contact-details strong {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--green);
@@ -268,26 +273,27 @@ body {
 .contact-details a,
 .contact-details span {
   color: #fff;
+  font-size: 0.95rem;
   text-decoration: none;
-  font-size: 1rem;
 }
 
 /* Form */
 .contact-form {
   display: grid;
   gap: 14px;
-  max-width: 500px;
+  max-width: 480px;
   margin: auto;
 }
 
 .contact-form input,
 .contact-form textarea {
-  background: rgba(255,255,255,0.08);
-  border: none;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
   padding: 14px;
   color: #fff;
-  border-radius: 10px;
-  font-size: 0.95rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  outline: none;
 }
 
 .contact-form textarea {
@@ -295,16 +301,20 @@ body {
   resize: none;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
 .contact-form button {
-  margin-top: 10px;
   background: var(--red);
   border: none;
   padding: 14px;
   color: #fff;
-  font-size: 1rem;
-  border-radius: 10px;
+  font-size: 0.95rem;
+  border-radius: 14px;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.25s ease;
 }
 
 .contact-form button:hover {
@@ -313,7 +323,7 @@ body {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .contact-overlay {
+  .contact-container {
     padding: 40px 20px;
   }
 
@@ -322,6 +332,6 @@ body {
   }
 
   .contact-container h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
