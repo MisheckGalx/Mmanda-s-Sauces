@@ -5,7 +5,6 @@
   --green: #1abc9c;
   --white: #ffffff;
   --black: #0b0b0b;
-  --glass: rgba(255, 255, 255, 0.08);
   --muted: #cfcfcf;
 }
 
@@ -24,6 +23,19 @@ body {
   font-family: "Inter", Arial, sans-serif;
   background: #000;
   color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  position: relative;
+  isolation: isolate;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 /* ================= NAVBAR ================= */
@@ -56,17 +68,18 @@ body {
 .nav-links a {
   color: var(--white);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.3px;
   padding: 8px 14px;
   border-radius: 10px;
-  transition: background 0.3s ease;
+  transition: background 0.25s ease;
 }
 
 .nav-links a:hover {
-  background: var(--red);
+  background: rgba(230, 57, 0, 0.15);
 }
 
-/* WhatsApp Button */
+/* WhatsApp */
 .whatsapp-top {
   background: var(--green);
   color: #fff;
@@ -78,35 +91,37 @@ body {
 }
 
 .whatsapp-top:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 /* ================= HERO ================= */
 .hero-full {
   height: 100vh;
-  background: url("images/hero-bg.jpg") center/cover no-repeat;
+  background: url("images/hero-bg.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.55);
-  padding: 90px 80px;
-  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 80px 90px;
+  border-radius: 32px;
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 4rem;
-  letter-spacing: 3px;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  letter-spacing: 2px;
+  line-height: 1.05;
   text-transform: uppercase;
   text-shadow: 0 10px 30px rgba(0,0,0,0.8);
 }
 
 .hero-content p {
-  margin-top: 15px;
-  font-size: 1.4rem;
+  margin-top: 18px;
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
   color: var(--muted);
 }
 
@@ -122,26 +137,28 @@ body {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  align-items: center;
   gap: 60px;
   padding: 0 30px;
+  align-items: center;
 }
 
 .about-img {
   width: 420px;
-  border-radius: 25px;
+  border-radius: 28px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.7);
 }
 
 .about-text h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
+  letter-spacing: -0.5px;
   color: var(--red);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   line-height: 1.9;
+  max-width: 520px;
   color: #eee;
 }
 
@@ -152,12 +169,12 @@ body {
   color: #000;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-#products .products-inner {
+.products-inner {
   width: 100%;
   max-width: 1200px;
+  margin: auto;
   padding: 80px 20px;
   text-align: center;
 }
@@ -169,8 +186,8 @@ body {
 
 .product-grid {
   display: flex;
-  justify-content: center;
   gap: 50px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -178,16 +195,17 @@ body {
   width: 320px;
   padding: 30px;
   border-radius: 28px;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+  transition: transform 0.25s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px) scale(1.01);
 }
 
 .product-card img {
-  width: 100%;
   border-radius: 18px;
   margin-bottom: 20px;
 }
@@ -197,12 +215,12 @@ body {
   margin-bottom: 10px;
 }
 
-.product-card .price {
+.price {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-/* Product Colors */
+/* Product themes */
 .product-card.plain {
   background: linear-gradient(135deg, #ff7a00, #ff9a2f);
 }
@@ -211,8 +229,7 @@ body {
   background: linear-gradient(135deg, #ffd000, #ffe680);
 }
 
-/* ================= CONTACT SECTION ================= */
-
+/* ================= CONTACT ================= */
 .contact-section {
   min-height: 100vh;
   background: radial-gradient(circle at top, #111, #000);
@@ -220,16 +237,12 @@ body {
   align-items: center;
 }
 
-.contact-overlay {
-  width: 100%;
-}
-
 .contact-container.contact-3d {
   max-width: 1100px;
   margin: auto;
-  padding: 80px 40px;
+  padding: 90px 60px;
   display: flex;
-  gap: 60px;
+  gap: 80px;
   align-items: center;
 
   background: rgba(255, 255, 255, 0.06);
@@ -239,24 +252,22 @@ body {
   box-shadow:
     0 40px 80px rgba(0,0,0,0.7),
     inset 0 1px 0 rgba(255,255,255,0.1);
-
-  transform: perspective(1200px) translateZ(0);
 }
 
-/* VISUAL SIDE */
 .contact-visual img {
   width: 340px;
   filter: drop-shadow(0 30px 50px rgba(0,0,0,0.8));
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
+  will-change: transform;
 }
 
 .contact-container:hover .contact-visual img {
-  transform: translateY(-10px) rotate(-1deg);
+  transform: translateY(-10px);
 }
 
-/* CONTENT */
 .contact-content h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
+  letter-spacing: -0.8px;
   color: var(--red);
   margin-bottom: 12px;
 }
@@ -268,7 +279,6 @@ body {
   max-width: 480px;
 }
 
-/* INFO BLOCKS */
 .contact-info {
   display: grid;
   grid-template-columns: repeat(2, minmax(220px, 1fr));
@@ -276,19 +286,16 @@ body {
 }
 
 .contact-item {
-  background: rgba(0,0,0,0.45);
+  background: rgba(0,0,0,0.35);
   padding: 18px 20px;
   border-radius: 14px;
-
-  box-shadow:
-    0 15px 30px rgba(0,0,0,0.6),
-    inset 0 1px 0 rgba(255,255,255,0.08);
-
-  transition: transform 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .contact-item:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
+  border-color: rgba(230,57,0,0.4);
 }
 
 .contact-item strong {
