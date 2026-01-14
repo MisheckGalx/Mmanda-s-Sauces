@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mmanda’s Sauces</title>
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,9 +20,18 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a href="https://wa.me/27626456655" class="whatsapp-top" target="_blank">
-      WhatsApp
-    </a>
+    <div class="nav-actions">
+      <a href="https://www.instagram.com/mmandassauces" 
+         class="social-icon"
+         target="_blank"
+         aria-label="Instagram">
+        <img src="images/instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="https://wa.me/27626456655" class="whatsapp-top" target="_blank">
+        WhatsApp
+      </a>
+    </div>
   </div>
 </header>
 
@@ -47,14 +55,20 @@
         Mmanda’s Sauces blends African heat with modern craft.
         Every bottle is bold, balanced, and unapologetically spicy.
       </p>
+      <p class="about-micro">
+        From kitchen experiments to bottled perfection — every sauce tells our story.
+      </p>
     </div>
   </div>
 </section>
 
 <!-- ================= PRODUCTS ================= -->
-<section id="products" class="products-section">
+<section id="products">
   <div class="products-inner">
     <h2>Explore Our Range</h2>
+    <p class="products-sub">
+      Crafted in small batches for bold, unforgettable flavour.
+    </p>
 
     <div class="product-grid">
       <div class="product-card plain">
@@ -72,67 +86,69 @@
   </div>
 </section>
 
-<!-- ================= CONTACT HERO ================= -->
-<section class="contact-hero">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <h1>Let’s Talk</h1>
-    <p>
-      Questions, partnerships, bulk orders, or just a love note for the heat —
-      we’re always happy to hear from you.
-    </p>
-  </div>
-</section>
-
 <!-- ================= CONTACT ================= -->
 <section id="contact" class="contact-section">
-  <div class="contact-container">
+  <div class="contact-overlay">
+    <div class="contact-container contact-3d">
 
-    <!-- LEFT -->
-    <div class="contact-info">
-      <h2>Get in touch</h2>
-      <p class="contact-intro">
-        Every message matters to us. Whether you’re a customer, distributor,
-        or simply curious — reach out anytime.
-      </p>
-
-      <div class="contact-item">
-        <span>Email</span>
-        <strong>info@mmandassauces.co.za</strong>
+      <!-- LEFT SIDE -->
+      <div class="contact-visual">
+        <img src="images/contact-bottle.png" alt="Mmanda’s Sauce Bottle" />
       </div>
 
-      <div class="contact-item">
-        <span>Phone</span>
-        <strong>+27 62 645 6655</strong>
+      <!-- RIGHT SIDE -->
+      <div class="contact-content">
+        <h2>Let’s Talk Flavours</h2>
+        <p class="contact-subtitle">
+          Questions, bulk orders, or collaborations?  
+          Our team is ready to connect with you.
+        </p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:mmanda@sauces.com">mmanda@sauces.com</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <a href="tel:+27626456655">+27 62 645 6655</a>
+          </div>
+
+          <div class="contact-item">
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/27626456655" target="_blank">
+              Chat with us instantly
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Location</strong>
+            <span>Clayville, South Africa</span>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            <span>Your Name</span>
+            <input type="text" placeholder="Enter your full name" required />
+          </label>
+
+          <label>
+            <span>Email Address</span>
+            <input type="email" placeholder="Enter your email address" required />
+          </label>
+
+          <label>
+            <span>Your Message</span>
+            <textarea placeholder="Tell us how we can help you…" required></textarea>
+          </label>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
 
-      <div class="contact-item">
-        <span>Location</span>
-        <strong>South Africa</strong>
-      </div>
     </div>
-
-    <!-- RIGHT -->
-    <form class="contact-form">
-      <label>
-        <span>Your Name</span>
-        <input type="text" placeholder="Enter your full name" required />
-      </label>
-
-      <label>
-        <span>Email Address</span>
-        <input type="email" placeholder="Enter your email address" required />
-      </label>
-
-      <label>
-        <span>Your Message</span>
-        <textarea placeholder="Tell us how we can help you…" required></textarea>
-      </label>
-
-      <button type="submit">Send Message</button>
-    </form>
-
   </div>
 </section>
 
