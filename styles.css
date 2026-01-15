@@ -104,27 +104,72 @@ body { font-family: "Inter", Arial, sans-serif; background: #000; color: var(--w
 .about-micro { margin-top: 18px; font-size: 0.95rem; color: rgba(255,255,255,0.7); font-style: italic; }
 
 /* ================= PRODUCTS ================= */
-#products { min-height: 100vh; background: #fff; color: #000; display: flex; align-items: center; justify-content: center; }
-#products .products-inner { width: 100%; max-width: 1200px; padding: 80px 20px; text-align: center; }
-#products h2 { font-size: 3rem; margin-bottom: 20px; }
-.products-sub { margin-bottom: 50px; color: rgba(0,0,0,0.6); font-size: 1.1rem; }
+#products {
+  min-height: calc(100vh - 120px);
+  background: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+}
 
-.product-grid { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; }
+#products .products-inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#products h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.products-sub {
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.1rem;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* PRODUCT CARD – PURE WHITE */
 .product-card {
   width: 320px;
   padding: 30px;
   border-radius: 28px;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  background: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-  backdrop-filter: blur(6px);
 }
-.product-card:hover { transform: translateY(-10px); }
-.product-card img { width: 100%; border-radius: 18px; margin-bottom: 20px; }
-.product-card h3 { font-size: 1.4rem; margin-bottom: 10px; }
-.product-card .price { font-size: 1.2rem; font-weight: 700; }
 
-.product-card.plain { background: linear-gradient(135deg, #f36b21, #ff8c42); }
-.product-card.creamy { background: linear-gradient(135deg, #f4d35e, #fff1b8); }
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 
 /* ================= CONTACT HERO ================= */
 .contact-hero {
