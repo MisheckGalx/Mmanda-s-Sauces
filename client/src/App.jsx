@@ -515,4 +515,93 @@ function App() {
                   <ShoppingCart size={80} className="mx-auto text-gray-700 mb-6" />
                   <p className="text-xl text-gray-400 mb-6">Your cart is empty</p>
                   <button
-                    onClick={() => { setShowCart(
+                    onClick={() => { setShowCart(false); scrollTo('products'); }}
+                    className="px-8 py-4 bg-gradient-to-r from-red-500 to-orange-500 rounded-full font-bold shadow-xl hover:shadow-2xl transition"
+                  >
+                    Start Shopping
+                  </button>
+                </div>
+              ) : (
+                <div>
+                  <div className="space-y-4 mb-8">
+                    {cart.map(item => (
+                      <div key={item.id} className="p-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10">
+                        <div className="flex justify-between mb-4">
+                          <div className="flex items-center space-x-4">
+                            <img 
+                              src={item.image}
+                              alt={item.name}
+                              className="w-16 h-16 object-cover rounded-lg"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextElementSibling.style.display = 'block';
+                              }}
+                            />
+                            <div className="text-4xl hidden">{item.emoji}</div>
+                            <div>
+                              <h3 className="font-bold text-lg">{item.name}</h3>
+                              <p className="text-sm text-gray-400">R{item.price} each</p>
+                            </div>
+                          </div>
+                          <button onClick={() => removeFromCart(item.id)} className="text-red-400 hover:text-red-300 transition">
+                            <Trash2 size={20} />
+                          </button>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <div className="flex items-center space-x-4">
+                            <button onClick={() => updateQuantity(item.id, -1)} className="p-3 bg-white/10 hover:bg-white/20 rounded-xl transition">
+                              <Minus size={16} />
+                            </button>
+                            <span className="text-xl font-bold w-12 text-center">{item.quantity}</span>
+                            <button onClick={() => updateQuantity(item.id, 1)} className="p-3 bg-white/10 hover:bg-white/20 rounded-xl transition">
+                              <Plus size={16} />
+                            </button>
+                          </div>
+                          <div className="text-2xl font-black bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+                            R{item.price * item.quantity}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="p-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 mb-6">
+                    <div className="flex justify-between items-center text-sm text-gray-400 mb-3">
+                      <span>Subtotal</span>
+                      <span className="font-semibold">R{getTotal()}</span>
+                    </div>
+                    <div className="flex justify-between items-center text-3xl font-black">
+                      <span>Total</span>
+                      <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+                        R{getTotal()}
+                      </span>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => window.open(`https://wa.me/27626456655?text=Order Total: R${getTotal()}`, '_blank')}
+                    className="w-full py-5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-green-500/50 transition-all transform hover:scale-105 flex items-center justify-center space-x-3"
+                  >
+                    <Phone size={22} />
+                    <span>Complete Order on WhatsApp</span>
+                  </button>
+                  <p className="text-center text-xs text-gray-500 mt-4">Secure checkout via WhatsApp</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <button
+        onClick={() => window.open('https://wa.me/27626456655', '_blank')}
+        className="fixed bottom-8 right-8 z-40 p-5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full shadow-2xl shadow-green-500/50 hover:shadow-green-500/80 transition-all transform hover:scale-110"
+        title="Chat on WhatsApp"
+      >
+        <Phone size={28} />
+      </button>
+    </div>
+  );
+}
+
+export default App;
