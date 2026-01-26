@@ -350,7 +350,7 @@ function App() {
       </section>
 
       {/* GALLERY - Clean White */}
-      <section id="gallery" className="py-24 px-6 bg-white">
+      <section id="Showcase" className="py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
