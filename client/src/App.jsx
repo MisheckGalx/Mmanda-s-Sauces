@@ -152,14 +152,14 @@ function App() {
 
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-none text-white drop-shadow-2xl tracking-tight">
-            FLAVOR
+            PURE FLAVOR
             <span className="block text-orange-500">
-              THAT FIRES
+              BUILT FOR REAL HEAT
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white mb-12 max-w-2xl mx-auto font-medium drop-shadow-lg">
-            Premium Hot Sauces • Handcrafted in South Africa
+            Premium Hot Sauces • Handcrafted in with heat
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -310,8 +310,8 @@ function App() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 "Simply exceptional. The perfect balance of heat and flavor. It's become a staple in my kitchen."
               </p>
-              <div className="font-semibold text-black">Sarah M.</div>
-              <div className="text-sm text-gray-500">Cape Town</div>
+              <div className="font-semibold text-black">Amanda Sibanda.</div>
+              <div className="text-sm text-gray-500">Clayville</div>
             </div>
 
             <div className="p-8 bg-gray-50 rounded-2xl">
@@ -323,10 +323,10 @@ function App() {
                 ))}
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                "Authentic South African fire in a bottle. The quality is unmatched. I'm hooked!"
+                "Authentic African fire in a bottle. The quality is unmatched. I'm hooked!"
               </p>
-              <div className="font-semibold text-black">David K.</div>
-              <div className="text-sm text-gray-500">Johannesburg</div>
+              <div className="font-semibold text-black">Misheck G.</div>
+              <div className="text-sm text-gray-500">Midrand</div>
             </div>
 
             <div className="p-8 bg-gray-50 rounded-2xl">
@@ -340,8 +340,8 @@ function App() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 "Every meal is an experience now. Bold, flavorful, and beautifully crafted. Five stars!"
               </p>
-              <div className="font-semibold text-black">Nomsa T.</div>
-              <div className="text-sm text-gray-500">Durban</div>
+              <div className="font-semibold text-black">Ayanda S.</div>
+              <div className="text-sm text-gray-500">kempton Park</div>
             </div>
           </div>
         </div>
@@ -388,7 +388,7 @@ function App() {
             <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
               Get Connected
             </h2>
-            <p className="text-lg text-gray-600">Questions? Orders? We're here to help</p>
+            <p className="text-lg text-gray-600">Questions, partnerships, bulk orders, or just a love note for the heat — we’re always happy to hear from you.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
