@@ -430,29 +430,39 @@ function App() {
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="bg-black py-12 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-3 mb-3">
-            <img 
-              src="/images/logo-white.png" 
-              alt="Mmanda's Logo" 
-              className="w-10 h-10 object-contain"
-              onError={(e) => {
-                e.target.src = '/images/logo.png';
-                e.target.onerror = () => {
-                  e.target.style.display = 'none';
-                  e.target.nextElementSibling.style.display = 'block';
-                };
-              }}
-            />
-            <div className="text-3xl hidden">🌶️</div>
-            <h3 className="text-2xl font-bold text-white">Mmanda's Sauces</h3>
-          </div>
-          <p className="text-gray-400 text-sm">Handcrafted • Authentic • Bold</p>
-          <p className="text-gray-500 text-xs mt-2">© 2026 All rights reserved. Made with 🔥 in South Africa</p>
-        </div>
-      </footer>
+  <div className="max-w-6xl mx-auto text-center">
+    <div className="flex items-center justify-center space-x-3 mb-3">
+      <img 
+        src="/images/logo-white.png" 
+        alt="Mmanda's Logo" 
+        className="w-10 h-10 object-contain"
+        onError={(e) => {
+          e.target.src = '/images/logo.png';
+          e.target.onerror = () => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'block';
+          };
+        }}
+      />
+      <div className="text-3xl hidden">🌶️</div>
+      <h3 className="text-2xl font-bold text-white">Mmanda's Sauces</h3>
+    </div>
+    <p className="text-gray-400 text-sm">Handcrafted • Authentic • Bold</p>
+    <p className="text-gray-500 text-xs mt-2">
+      © 2026 All rights reserved. Made with 🔥 in South Africa
+    </p>
+    
+    {/* Secret Admin Link - only visible on hover */}
+    <a 
+      href="/admin" 
+      className="inline-block mt-4 text-gray-800 hover:text-gray-600 text-xs opacity-0 hover:opacity-100 transition-opacity"
+      title="Admin Access"
+    >
+      •
+    </a>
+  </div>
+</footer>
 
       {/* CART */}
       {showCart && (
