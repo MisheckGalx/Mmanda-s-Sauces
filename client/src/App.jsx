@@ -218,19 +218,46 @@ function App() {
                 Crafted with Passion & Fire
               </h2>
 
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Every bottle of Mmanda's Sauces is a celebration of African heat and artisanal craft. 
-                We blend tradition with innovation to create sauces that elevate every meal &  Every bottle is bold, 
-                balanced, and unapologetically spicy.
-              </p>
+              <div>
+  <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-black tracking-tight">
+    Our Story
+  </h2>
 
-              <button
-                onClick={() => scrollTo('products')}
-                className="px-8 py-3.5 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all transform hover:scale-105"
-              >
-                Discover Our Sauces
-              </button>
-            </div>
+  <div className="space-y-5 text-lg text-gray-600 leading-relaxed">
+    <p>
+      Mmanda’s Sauces was born at home — long before it ever had a label.
+    </p>
+
+    <p>
+      Growing up, my father had a deep love for cooking. He didn’t simply follow recipes; 
+      he experimented, tasted, adjusted, and created. One of his proudest creations was his 
+      homemade chilli sauces, made completely from scratch.
+    </p>
+
+    <p>
+      Inspired by his passion, I began developing my own sauces, carrying forward that same 
+      spirit of creativity and togetherness. What started as small batches shared with family 
+      and friends slowly grew into something bigger.
+    </p>
+
+    <p>
+      My mother and sister have been instrumental in the journey — from taste-testing to 
+      encouragement. Their belief helped shape Mmanda’s into what it is today.
+    </p>
+
+    <p className="font-semibold text-black">
+      Mmanda’s Sauces isn’t just about heat — it’s about flavour, heritage, and love in every bottle.
+    </p>
+  </div>
+
+  <button
+    onClick={() => scrollTo('products')}
+    className="mt-10 px-8 py-3.5 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all transform hover:scale-105"
+  >
+    View Our Sauces
+  </button>
+</div>
+
           </div>
         </div>
       </section>
