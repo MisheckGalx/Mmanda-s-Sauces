@@ -203,62 +203,55 @@ function App() {
       </section>
 
       {/* ABOUT - Story */}
-      <section id="about" className="py-24 px-6 bg-gradient-to-br from-orange-50 to-white relative">
-        <div className="absolute inset-0 bg-black/5"></div>
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Founder Image */}
-            <div className="relative overflow-hidden rounded-2xl">
-              <img 
-                src="/images/founder/founder-photo.jpg" 
-                alt="Mmanda's Founder" 
-                className="w-full aspect-[3/4] object-cover"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextElementSibling.style.display = 'flex';
-                }}
-              />
-              <div className="hidden w-full aspect-[3/4] bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
-                👨‍🍳
-              </div>
-            </div>
-
-            {/* Story Content */}
-            <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-4 text-black tracking-tight">Our Story</h2>
-              <p className="text-xl text-orange-600 font-semibold mb-8 tracking-wide">CRAFTED HEAT. PURE FLAVOUR</p>
-              <div className="space-y-6 text-base md:text-lg text-gray-700 leading-relaxed">
-                <p>
-                  Mmanda's Sauces didn't start on a shelf — it started in our kitchen.
-                </p>
-
-                <p>
-                  As a child, I watched my father transform simple ingredients into magic. He didn't just cook — he experimented, tasted, adjusted, and perfected. His chilli sauces, made entirely from scratch, were legendary in our home: bold, fiery, and full of love. Each bottle told a story of patience, creativity, and a passion for flavour.
-                </p>
-
-                <p>
-                  Inspired by him, I began crafting my own sauces, determined to capture that same spirit. What began as a few small batches for family and friends quickly grew into something more — a brand that celebrates tradition, authenticity, and the joy of sharing food with the people you love.
-                </p>
-
-                <p>
-                  My mother and sister have been my guiding lights on this journey. From tasting and giving honest feedback to cheering me on through every experiment, their support has been woven into every bottle we make.
-                </p>
-
-                <p className="font-semibold text-black text-lg">
-                  Mmanda's Sauces isn't just about heat — it's about flavour, family, and heart. Every bottle carries a piece of our story, crafted with love and ready to bring people together.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <button
-            onClick={() => scrollTo('products')}
-            className="mt-12 px-8 py-3.5 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all transform hover:scale-105"
-          >
-            View Our Sauces
-          </button>
+<section id="about" className="py-24 px-6 bg-white relative">
+  <div className="max-w-6xl mx-auto relative z-10">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Founder Image */}
+      <div className="relative overflow-hidden rounded-2xl">
+        <img 
+          src="/images/founder/founder-photo.jpg" 
+          alt="Mmanda's Founder" 
+          className="w-full aspect-[3/4] object-cover"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full aspect-[3/4] bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
+          👨‍🍳
         </div>
-      </section>
+      </div>
+
+      {/* Story Content */}
+      <div>
+        <h2 className="text-5xl md:text-6xl font-bold mb-4 text-black tracking-tight">Our Story</h2>
+        <p className="text-xl text-orange-600 font-semibold mb-8 tracking-wide">CRAFTED HEAT. PURE FLAVOUR</p>
+        <div className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
+          <p>
+          
+  What started in our kitchen has grown into Mmanda's Sauces — bold, fiery, and full of love.
+          </p>
+
+          <p>
+            Inspired by my father’s legendary chilli sauces, I began crafting my own, guided by family, passion, and creativity.
+          </p>
+
+          <p className="font-semibold text-black text-lg">
+            Every bottle carries flavour, family, and heart — crafted to bring people together.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button
+      onClick={() => scrollTo('products')}
+      className="mt-12 px-8 py-3.5 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all transform hover:scale-105"
+    >
+      View Our Sauces
+    </button>
+  </div>
+</section>
+
 
       {/* PRODUCTS - Clean and Simple */}
       <section id="products" className="py-24 px-6 bg-white">
