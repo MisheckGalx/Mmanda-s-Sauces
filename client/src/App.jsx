@@ -425,7 +425,7 @@ function App() {
             <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
               Let's Talk Flavors
             </h2>
-            <p className="text-lg text-gray-600">Questions, partnerships, bulk orders, or just a love note for the heat — we're always happy to hear from you.</p>
+            <p className="text-lg text-gray-600">Questions, partnerships, bulk orders, or just a love note for the heat we're always happy to hear from you.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -448,7 +448,7 @@ function App() {
                 <Mail size={24} className="text-white" />
               </div>
               <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Email</div>
-              <div className="text-base font-semibold text-black">info@mmandassauces.co.za</div>
+              <div className="text-base font-semibold text-black">Amanda.Sibanda2001@gmail.com</div>
             </button>
 
             <button
@@ -459,7 +459,7 @@ function App() {
                 <Instagram size={24} className="text-white" />
               </div>
               <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Instagram</div>
-              <div className="text-base font-semibold text-black">@mmandassauces</div>
+              <div className="text-base font-semibold text-black">mmandas_sauces</div>
             </button>
           </div>
         </div>
@@ -483,9 +483,9 @@ function App() {
             <div className="text-3xl hidden">🌶️</div>
             <h3 className="text-2xl font-bold text-white">Mmanda's Sauces</h3>
           </div>
-          <p className="text-gray-400 text-sm">Handcrafted • Authentic • Bold</p>
+          <p className="text-gray-400 text-sm">CRAFTED HEAT • PURE FLAVOUR</p>
           <p className="text-gray-500 text-xs mt-2">
-            © 2026 All rights reserved. Made with 🔥 in South Africa
+            © 2026 All rights reserved.
           </p>
         </div>
       </footer>
