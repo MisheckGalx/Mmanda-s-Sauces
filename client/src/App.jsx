@@ -229,7 +229,7 @@ function App() {
         <div className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
           <p>
           
-  What started in our kitchen has grown into Mmanda's Sauces — bold, fiery, and full of love.
+  What started in our kitchen has grown into Mmanda's Sauces bold, fiery, and full of love.
           </p>
 
           <p>
@@ -237,7 +237,7 @@ function App() {
           </p>
 
           <p className="font-semibold text-black text-lg">
-            Every bottle carries flavour, family, and heart — crafted to bring people together.
+            Every bottle carries flavour, family, and heart crafted to bring people together.
           </p>
         </div>
       </div>
