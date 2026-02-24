@@ -31,3 +31,7 @@ npm-debug.log*
 
 # Testing
 coverage/
+client/ngrok
+client/ngrok-v3-stable-linux-amd64.tgz
+client/ngrok
+client/ngrok-v3-stable-linux-amd64.tgz
