@@ -38,7 +38,7 @@ function App() {
       category: 'Signature Collection',
       heatLevel: 3,
       heatLabel: 'Medium-Hot',
-      flavorProfile: 'Bold habanero with roasted garlic and cumin.'
+      flavorProfile: 'Bold habanero, roasted garlic and cumin.'
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ function App() {
       category: 'Signature Collection',
       heatLevel: 3,
       heatLabel: 'Medium-Hot',
-      flavorProfile: 'Roasted red peppers with smoked paprika and cream.'
+      flavorProfile: 'Roasted red peppers, smoked paprika and cream.'
     }
   ];
 
