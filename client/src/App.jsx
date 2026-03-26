@@ -586,7 +586,7 @@ function App() {
 
       {/* FLOATING WHATSAPP */}
       <button
-        onClick={() => window.open('https://wa.me/27626456655', '_blank')}
+        onClick={() => window.open('https://wa.me/277113462385', '_blank')}
         className="fixed bottom-6 right-6 z-40 p-4 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all transform hover:scale-110"
         title="Chat on WhatsApp"
       >
