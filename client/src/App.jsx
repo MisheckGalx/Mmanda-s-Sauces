@@ -180,7 +180,7 @@ function App() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </button>
             <button
-              onClick={() => window.open('https://wa.me/27626456655', '_blank')}
+              onClick={() => window.open('https://wa.me/27711346238', '_blank')}
               className="px-10 py-4 bg-white hover:bg-gray-50 rounded-full font-semibold text-lg text-black transition-all transform hover:scale-105 flex items-center justify-center space-x-2"
             >
               <Phone size={20} />
@@ -430,7 +430,7 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <button
-              onClick={() => window.open('tel:+27626456655')}
+              onClick={() => window.open('tel:+27711346238')}
               className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
             >
               <div className="inline-flex p-4 bg-green-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
@@ -441,7 +441,7 @@ function App() {
             </button>
 
             <button
-              onClick={() => window.open('mailto:info@mmandassauces.co.za')}
+              onClick={() => window.open('mailto:info@mmandas.com')}
               className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
             >
               <div className="inline-flex p-4 bg-orange-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
@@ -452,7 +452,7 @@ function App() {
             </button>
 
             <button
-              onClick={() => window.open('https://instagram.com/mmandassauces', '_blank')}
+              onClick={() => window.open('https://instagram.com/mmandas_sauces', '_blank')}
               className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
             >
               <div className="inline-flex p-4 bg-pink-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
@@ -570,7 +570,7 @@ function App() {
                   </div>
 
                   <button
-                    onClick={() => window.open(`https://wa.me/277113462385?text=Order Total: R${getTotal()}`, '_blank')}
+                    onClick={() => window.open(`https://wa.me/27711346238?text=Order Total: R${getTotal()}`, '_blank')}
                     className="w-full py-4 bg-green-600 hover:bg-green-700 rounded-full font-semibold text-lg text-white transition-all flex items-center justify-center space-x-2"
                   >
                     <Phone size={20} />
@@ -586,7 +586,7 @@ function App() {
 
       {/* FLOATING WHATSAPP */}
       <button
-        onClick={() => window.open('https://wa.me/277113462385', '_blank')}
+        onClick={() => window.open('https://wa.me/27711346238', '_blank')}
         className="fixed bottom-6 right-6 z-40 p-4 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all transform hover:scale-110"
         title="Chat on WhatsApp"
       >
