@@ -34,11 +34,11 @@ function App() {
       price: 35,
       image: '/images/products/plain-hot.jpg',
       emoji: '🌶️',
-      stock: 25,
+      stock: 100,
       category: 'Signature Collection',
       heatLevel: 3,
       heatLabel: 'Medium-Hot',
-      flavorProfile: 'Bold habanero, roasted garlic and cumin.'
+      flavorProfile: 'Bright, tangy heat with a bold, lingering spicy kick.'
     },
     {
       id: 2,
@@ -46,11 +46,11 @@ function App() {
       price: 35,
       image: '/images/products/creamy-hot.jpg',
       emoji: '🔥',
-      stock: 18,
+      stock: 100,
       category: 'Signature Collection',
       heatLevel: 3,
       heatLabel: 'Medium-Hot',
-      flavorProfile: 'Roasted red peppers, smoked paprika and cream.'
+      flavorProfile: 'Smooth, mellow heat with a rich, tangy, indulgent finish.'
     }
   ];
 
@@ -95,8 +95,8 @@ function App() {
               />
               <div className="text-4xl hidden">🌶️</div>
               <div>
-                <h1 className="text-2xl font-bold text-black tracking-tight">Mmanda's</h1>
-                <p className="text-xs font-medium text-gray-500 tracking-wide">PREMIUM HOT SAUCES</p>
+                <h1 className="text-2xl font-bold text-black tracking-tight">Mmanda's Sauces</h1>
+                <p className="text-xs font-medium text-gray-500 tracking-wide">CRAFTED HEAT</p>
                 <p className="text-xs font-medium text-gray-500 tracking-wide">Monday - Friday 08am - 5pm</p>
               </div>
             </div>
@@ -347,7 +347,7 @@ function App() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 "Simply exceptional. The perfect balance of heat and flavor. It's become a staple in my kitchen."
               </p>
-              <div className="font-semibold text-black">Amanda S.</div>
+              <div className="font-semibold text-black">Asanda.</div>
               <div className="text-sm text-gray-500">Clayville</div>
             </div>
 
@@ -362,7 +362,7 @@ function App() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 "Authentic African fire in a bottle. The quality is unmatched. I'm hooked!"
               </p>
-              <div className="font-semibold text-black">Misheck G.</div>
+              <div className="font-semibold text-black">Zahra.</div>
               <div className="text-sm text-gray-500">Johannesburg</div>
             </div>
 
@@ -377,7 +377,7 @@ function App() {
               <p className="text-gray-700 mb-4 leading-relaxed">
                 "Every meal is an experience now. Bold, flavorful, and beautifully crafted. Five stars!"
               </p>
-              <div className="font-semibold text-black">Ayanda S.</div>
+              <div className="font-semibold text-black">Lebo.</div>
               <div className="text-sm text-gray-500">Kempton Park</div>
             </div>
           </div>
@@ -437,7 +437,7 @@ function App() {
                 <Phone size={24} className="text-white" />
               </div>
               <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Phone</div>
-              <div className="text-base font-semibold text-black">+27 62 645 6655</div>
+              <div className="text-base font-semibold text-black">+27 71 134 6238</div>
             </button>
 
             <button
@@ -448,7 +448,7 @@ function App() {
                 <Mail size={24} className="text-white" />
               </div>
               <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Email</div>
-              <div className="text-base font-semibold text-black">Amanda.Sibanda2001@gmail.com</div>
+              <div className="text-base font-semibold text-black">info@mmandas.com</div>
             </button>
 
             <button
