@@ -95,7 +95,7 @@ function App() {
               />
               <div className="text-4xl hidden">🌶️</div>
               <div>
-                <h1 className="text-2xl font-bold text-black tracking-tight">Mmanda's Sauces</h1>
+                <h1 className="text-2xl font-bold text-black tracking-tight">Mmanda's</h1>
                 <p className="text-xs font-medium text-gray-500 tracking-wide">CRAFTED HEAT</p>
                 <p className="text-xs font-medium text-gray-500 tracking-wide">Monday - Friday 08am - 5pm</p>
               </div>
