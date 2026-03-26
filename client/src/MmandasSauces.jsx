@@ -16,7 +16,7 @@ const MmandasSauces = () => {
       description: 'Pure, unadulterated heat. Our signature sauce with authentic African peppers.',
       image: '🌶️',
       rating: 4.8,
-      stock: 25,
+      stock: 100,
       category: 'Classic'
     },
     {
@@ -26,7 +26,7 @@ const MmandasSauces = () => {
       description: 'Smooth and creamy with a perfect kick. Perfect for dipping.',
       image: '🔥',
       rating: 4.9,
-      stock: 18,
+      stock: 100,
       category: 'Classic'
     },
     {
@@ -36,7 +36,7 @@ const MmandasSauces = () => {
       description: 'Bold garlic meets fiery heat. A flavor explosion in every drop.',
       image: '🧄',
       rating: 4.7,
-      stock: 15,
+      stock: 100,
       category: 'Premium'
     },
     {
@@ -46,7 +46,7 @@ const MmandasSauces = () => {
       description: 'Honey-sweetened with a spicy finish. The perfect balance.',
       image: '🍯',
       rating: 4.6,
-      stock: 20,
+      stock: 100,
       category: 'Premium'
     }
   ];
@@ -101,7 +101,7 @@ const MmandasSauces = () => {
     
     const message = `🌶️ *New Order from Website*\n\n${orderDetails}\n\n*Total: R${getTotal()}*\n\nPlease confirm my order and delivery details.`;
     
-    window.open(`https://wa.me/27626456655?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/27711346238?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   // Navigation
@@ -231,7 +231,7 @@ const MmandasSauces = () => {
               Shop Now <ChevronRight className="inline ml-2" size={20} />
             </button>
             <a
-              href="https://wa.me/27626456655"
+              href="https://wa.me/27711346238"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-green-600 rounded-full font-bold text-lg hover:shadow-lg hover:shadow-green-500/50 transform hover:scale-105 transition-all flex items-center justify-center"
@@ -412,10 +412,10 @@ const MmandasSauces = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               {[
-                { icon: <Phone size={24} />, title: 'Phone', value: '+27 62 645 6655', link: 'tel:+27626456655' },
-                { icon: <Mail size={24} />, title: 'Email', value: 'info@mmandassauces.co.za', link: 'mailto:info@mmandassauces.co.za' },
+                { icon: <Phone size={24} />, title: 'Phone', value: '+27 71 134 6238', link: 'tel:+27 71 134 6238' },
+                { icon: <Mail size={24} />, title: 'Email', value: 'info@mmandas.com', link: 'mailto:info@mmandas.com' },
                 { icon: <MapPin size={24} />, title: 'Location', value: 'Clayville, South Africa', link: null },
-                { icon: <Instagram size={24} />, title: 'Instagram', value: '@mmandassauces', link: 'https://www.instagram.com/mmandassauces' }
+                { icon: <Instagram size={24} />, title: 'Instagram', value: '@mmandas_sauces', link: 'https://www.instagram.com/mmandas_sauces' }
               ].map((item, idx) => (
                 <div
                   key={idx}
