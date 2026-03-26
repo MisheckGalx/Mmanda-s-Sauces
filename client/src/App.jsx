@@ -384,39 +384,125 @@ function App() {
         </div>
       </section>
 
-      {/* GALLERY - Clean White */}
-      <section id="gallery" className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
-              Heat in Action
-            </h2>
-            <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
-          </div>
+      {/* GALLERY - Clean White with Categories */}
+<section id="gallery" className="py-24 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
+        Heat in Action
+      </h2>
+      <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((num) => (
-              <div 
-                key={num}
-                className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg"
-              >
-                <img 
-                  src={`/images/gallery/product-lifestyle-${num}.jpg`}
-                  alt={`Mmanda's Sauce Lifestyle ${num}`}
-                  className="w-full aspect-[3/4] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="hidden w-full aspect-[3/4] bg-orange-500 items-center justify-center text-8xl text-white">
-                  🌶️
-                </div>
-              </div>
-            ))}
-          </div>
+    {/* Gallery Grid - 5 items in masonry layout */}
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[300px]">
+      
+      {/* Image 1 - Large (spans 2x2) */}
+      <div 
+        className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer"
+      >
+        <img 
+          src="/images/gallery/product-lifestyle-1.jpg"
+          alt="Heat in Action 1"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
+          🌶️
         </div>
-      </section>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Image 2 - Large Right (spans 2x2) */}
+      <div 
+        className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer"
+      >
+        <img 
+          src="/images/gallery/product-lifestyle-2.jpg"
+          alt="Heat in Action 2"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
+          🌶️
+        </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Image 3 - Bottom Left */}
+      <div 
+        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer"
+      >
+        <img 
+          src="/images/gallery/product-lifestyle-3.jpg"
+          alt="Heat in Action 3"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+          🌶️
+        </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Image 4 - Bottom Center */}
+      <div 
+        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer"
+      >
+        <img 
+          src="/images/gallery/product-lifestyle-4.jpg"
+          alt="Heat in Action 4"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+          🌶️
+        </div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Image 5 - Category Card (Bottom Right with dark background) */}
+      <div 
+        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-900 to-blue-950 transition-all duration-300 hover:shadow-lg cursor-pointer flex flex-col items-center justify-center p-6"
+      >
+        <div className="text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">
+            Our Hot <span className="block">Sauces
+          </span>
+          </h3>
+          <p className="text-blue-200 text-sm mb-4">
+            Discover our full collection
+          </p>
+          <button 
+            onClick={() => scrollTo('products')}
+            className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-semibold transition-all text-sm"
+          >
+            VIEW NOW
+          </button>
+        </div>
+        {/* Overlay effect */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CONTACT - Minimal Clean */}
       <section id="contact" className="py-24 px-6 bg-white">
