@@ -394,10 +394,20 @@ function App() {
       <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
     </div>
 
-    {/* Gallery Grid - 5 items in masonry layout */}
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[300px]">
+    {/* GALLERY - Clean White with Categories */}
+<section id="gallery" className="py-24 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
+        Heat in Action
+      </h2>
+      <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
+    </div>
+
+    {/* Gallery Grid - 5 items with 2 large + 3 small */}
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[250px] md:auto-rows-[200px]">
       
-      {/* Image 1 - Large (spans 2x2) */}
+      {/* Large Image 1 - spans 2x2 */}
       <div 
         className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer"
       >
@@ -413,11 +423,10 @@ function App() {
         <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
           🌶️
         </div>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
       </div>
 
-      {/* Image 2 - Large Right (spans 2x2) */}
+      {/* Large Image 2 - spans 2x2 */}
       <div 
         className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer"
       >
@@ -433,13 +442,12 @@ function App() {
         <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
           🌶️
         </div>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
       </div>
 
-      {/* Image 3 - Bottom Left */}
+      {/* Small Image 3 */}
       <div 
-        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer"
+        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer md:col-span-1 md:row-span-1"
       >
         <img 
           src="/images/gallery/product-lifestyle-3.jpg"
@@ -450,16 +458,15 @@ function App() {
             e.target.nextElementSibling.style.display = 'flex';
           }}
         />
-        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white rounded-2xl">
           🌶️
         </div>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
       </div>
 
-      {/* Image 4 - Bottom Center */}
+      {/* Small Image 4 */}
       <div 
-        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer"
+        className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer md:col-span-1 md:row-span-1"
       >
         <img 
           src="/images/gallery/product-lifestyle-4.jpg"
@@ -470,21 +477,19 @@ function App() {
             e.target.nextElementSibling.style.display = 'flex';
           }}
         />
-        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white rounded-2xl">
           🌶️
         </div>
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
       </div>
 
-      {/* Image 5 - Category Card (Bottom Right with dark background) */}
+      {/* Small Image 5 - Category Card */}
       <div 
-        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-900 to-blue-950 transition-all duration-300 hover:shadow-lg cursor-pointer flex flex-col items-center justify-center p-6"
+        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-900 to-blue-950 transition-all duration-300 hover:shadow-lg cursor-pointer flex flex-col items-center justify-center p-6 md:col-span-1 md:row-span-1"
       >
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 tracking-tight">
-            Our Hot <span className="block">Sauces
-          </span>
+            Our Hot <span className="block">Sauces</span>
           </h3>
           <p className="text-blue-200 text-sm mb-4">
             Discover our full collection
@@ -496,7 +501,6 @@ function App() {
             VIEW NOW
           </button>
         </div>
-        {/* Overlay effect */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
       </div>
 
