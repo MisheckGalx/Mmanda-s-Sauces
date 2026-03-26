@@ -202,54 +202,86 @@ function App() {
         </div>
       </section>
 
-      {/* ABOUT - Story */}
-<section id="about" className="py-24 px-6 bg-white relative">
+      {/* ABOUT - Story Section with Black Background */}
+<section id="about" className="py-24 px-6 bg-black relative overflow-hidden">
   <div className="max-w-6xl mx-auto relative z-10">
     <div className="grid lg:grid-cols-2 gap-16 items-center">
-      {/* Founder Image */}
-      <div className="relative overflow-hidden rounded-2xl">
-        <img 
-          src="/images/founder/founder-photo.jpg" 
-          alt="Mmanda's Founder" 
-          className="w-full aspect-[3/4] object-cover"
-          onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.nextElementSibling.style.display = 'flex';
-          }}
-        />
-        <div className="hidden w-full aspect-[3/4] bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">
-          👨‍🍳
-        </div>
-      </div>
-
-      {/* Story Content */}
+      
+      {/* Left Side - Text Content */}
       <div>
-        <h2 className="text-5xl md:text-6xl font-bold mb-4 text-black tracking-tight">Our Story</h2>
-        <p className="text-xl text-orange-600 font-semibold mb-8 tracking-wide">CRAFTED HEAT. PURE FLAVOUR</p>
-        <div className="space-y-4 text-base md:text-lg text-gray-700 leading-relaxed">
+        <h2 className="text-6xl md:text-7xl font-bold mb-8 leading-tight text-white tracking-tight">
+          OUR <span className="block">STORY</span>
+        </h2>
+        
+        <p className="text-xl text-orange-500 font-bold mb-12 tracking-wide">
+          CRAFTED HEAT. PURE FLAVOUR
+        </p>
+
+        <div className="space-y-6 text-base md:text-lg text-gray-300 leading-relaxed">
           <p>
-          
-  What started in our kitchen has grown into Mmanda's Sauces bold, fiery, and full of love.
+            What started in our kitchen has grown into Mmanda's Sauces bold, fiery, and full of love.
           </p>
 
           <p>
-            Inspired by my father’s legendary chilli sauces, I began crafting my own, guided by family, passion, and creativity.
+            Inspired by my father's legendary chilli sauces, I began crafting my own, guided by family, passion, and creativity.
           </p>
 
-          <p className="font-semibold text-black text-lg">
+          <p className="font-semibold text-white text-lg pt-4 border-t border-gray-700">
             Every bottle carries flavour, family, and heart crafted to bring people together.
           </p>
         </div>
-      </div>
-    </div>
 
-    <button
-      onClick={() => scrollTo('products')}
-      className="mt-12 px-8 py-3.5 bg-black hover:bg-gray-800 text-white rounded-full font-semibold transition-all transform hover:scale-105"
-    >
-      View Our Sauces
-    </button>
+        <button
+          onClick={() => scrollTo('products')}
+          className="mt-12 px-8 py-3.5 bg-white hover:bg-gray-100 text-black rounded-full font-bold tracking-wide transition-all transform hover:scale-105"
+        >
+          EXPLORE
+        </button>
+      </div>
+
+      {/* Right Side - Two Large Images */}
+      <div className="relative h-full min-h-[600px]">
+        {/* Large Image 1 - Top Right */}
+        <div className="absolute top-0 right-0 w-56 h-72 rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="/images/gallery/product-lifestyle-1.jpg"
+            alt="Our Story 1"
+            className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextElementSibling.style.display = 'flex';
+            }}
+          />
+          <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+            🌶️
+          </div>
+        </div>
+
+        {/* Large Image 2 - Bottom Left */}
+        <div className="absolute bottom-0 left-0 w-64 h-80 rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="/images/gallery/product-lifestyle-2.jpg"
+            alt="Our Story 2"
+            className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextElementSibling.style.display = 'flex';
+            }}
+          />
+          <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white">
+            🌶️
+          </div>
+        </div>
+
+        {/* Decorative Element - Center */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
+      </div>
+
+    </div>
   </div>
+
+  {/* Background Gradient Effect */}
+  <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl -z-1"></div>
 </section>
 
 
@@ -476,52 +508,80 @@ function App() {
   </div>
 </section>
 
-      {/* CONTACT - Minimal Clean */}
-      <section id="contact" className="py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
-              Let's Talk Flavors
-            </h2>
-            <p className="text-lg text-gray-600">Questions, partnerships, bulk orders, or just a love note for the heat we're always happy to hear from you.</p>
-          </div>
+      {/* CONTACT - Black Background with Clean Design */}
+<section id="contact" className="py-24 px-6 bg-black">
+  <div className="max-w-4xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight">
+        Let's Talk <span className="text-orange-500">Flavours</span>
+      </h2>
+      <p className="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+        Questions, partnerships, bulk orders, or just a love note for the heat? We're always happy to hear from you.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <button
-              onClick={() => window.open('tel:+27711346238')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-green-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Phone size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Phone</div>
-              <div className="text-base font-semibold text-black">+27 71 134 6238</div>
-            </button>
-
-            <button
-              onClick={() => window.open('mailto:info@mmandas.com')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-orange-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Mail size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Email</div>
-              <div className="text-base font-semibold text-black">info@mmandas.com</div>
-            </button>
-
-            <button
-              onClick={() => window.open('https://instagram.com/mmandas_sauces', '_blank')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-pink-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Instagram size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Instagram</div>
-              <div className="text-base font-semibold text-black">mmandas_sauces</div>
-            </button>
-          </div>
+    <div className="grid md:grid-cols-3 gap-6">
+      {/* Phone Contact */}
+      <button
+        onClick={() => window.open('tel:+27711346238')}
+        className="group p-8 bg-gray-900/50 hover:bg-gray-800/80 rounded-2xl transition-all duration-300 hover:shadow-xl text-center border border-gray-800 hover:border-orange-500/50"
+      >
+        <div className="inline-flex p-4 bg-green-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
+          <Phone size={24} className="text-white" />
         </div>
-      </section>
+        <div className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wide">Phone</div>
+        <div className="text-lg font-bold text-white group-hover:text-orange-500 transition-colors">
+          +27 71 134 6238
+        </div>
+        <p className="text-xs text-gray-500 mt-2">Mon-Fri 08am - 5pm</p>
+      </button>
+
+      {/* Email Contact */}
+      <button
+        onClick={() => window.open('mailto:info@mmandas.com')}
+        className="group p-8 bg-gray-900/50 hover:bg-gray-800/80 rounded-2xl transition-all duration-300 hover:shadow-xl text-center border border-gray-800 hover:border-orange-500/50"
+      >
+        <div className="inline-flex p-4 bg-orange-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
+          <Mail size={24} className="text-white" />
+        </div>
+        <div className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wide">Email</div>
+        <div className="text-lg font-bold text-white group-hover:text-orange-500 transition-colors">
+          info@mmandas.com
+        </div>
+        <p className="text-xs text-gray-500 mt-2">We'll reply within 24 hours</p>
+      </button>
+
+      {/* Instagram Contact */}
+      <button
+        onClick={() => window.open('https://instagram.com/mmandas_sauces', '_blank')}
+        className="group p-8 bg-gray-900/50 hover:bg-gray-800/80 rounded-2xl transition-all duration-300 hover:shadow-xl text-center border border-gray-800 hover:border-orange-500/50"
+      >
+        <div className="inline-flex p-4 bg-pink-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
+          <Instagram size={24} className="text-white" />
+        </div>
+        <div className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wide">Instagram</div>
+        <div className="text-lg font-bold text-white group-hover:text-orange-500 transition-colors">
+          @mmandas_sauces
+        </div>
+        <p className="text-xs text-gray-500 mt-2">Follow us for updates</p>
+      </button>
+    </div>
+
+    {/* Bottom CTA Section */}
+    <div className="mt-16 pt-12 border-t border-gray-800 text-center">
+      <p className="text-gray-300 mb-6">
+        Ready to experience the heat?
+      </p>
+      <button
+        onClick={() => window.open('https://wa.me/27711346238', '_blank')}
+        className="px-10 py-4 bg-orange-500 hover:bg-orange-600 text-black font-bold rounded-full transition-all transform hover:scale-105 inline-flex items-center space-x-2"
+      >
+        <Phone size={20} />
+        <span>Chat on WhatsApp</span>
+      </button>
+    </div>
+  </div>
+</section>
 
       <footer className="bg-black py-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
