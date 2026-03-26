@@ -384,39 +384,97 @@ function App() {
         </div>
       </section>
 
-      {/* GALLERY - Clean White */}
-      <section id="gallery" className="py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
-              Heat in Action
-            </h2>
-            <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
-          </div>
+      {/* GALLERY - Clean White with Categories */}
+<section id="gallery" className="py-24 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
+        Heat in Action
+      </h2>
+      <p className="text-lg text-gray-600">Elevating meals, one drop at a time</p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((num) => (
-              <div 
-                key={num}
-                className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg"
-              >
-                <img 
-                  src={`/images/gallery/product-lifestyle-${num}.jpg`}
-                  alt={`Mmanda's Sauce Lifestyle ${num}`}
-                  className="w-full aspect-[3/4] object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextElementSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="hidden w-full aspect-[3/4] bg-orange-500 items-center justify-center text-8xl text-white">
-                  🌶️
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Gallery Grid - 5 images: 2 large + 3 smaller */}
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[250px] md:auto-rows-[200px]">
+      
+      {/* Large Image 1 */}
+      <div className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer">
+        <img 
+          src="/images/gallery/product-lifestyle-1.jpg"
+          alt="Heat in Action 1"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">🌶️</div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Large Image 2 */}
+      <div className="group relative overflow-hidden rounded-2xl md:col-span-2 md:row-span-2 transition-all duration-300 hover:shadow-lg cursor-pointer">
+        <img 
+          src="/images/gallery/product-lifestyle-2.jpg"
+          alt="Heat in Action 2"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-9xl text-white rounded-2xl">🌶️</div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Small Image 3 */}
+      <div className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer md:col-span-1 md:row-span-1">
+        <img 
+          src="/images/gallery/product-lifestyle-3.jpg"
+          alt="Heat in Action 3"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white rounded-2xl">🌶️</div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Small Image 4 */}
+      <div className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer md:col-span-1 md:row-span-1">
+        <img 
+          src="/images/gallery/product-lifestyle-4.jpg"
+          alt="Heat in Action 4"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white rounded-2xl">🌶️</div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+      {/* Small Image 5 - Now just an image */}
+      <div className="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:shadow-lg cursor-pointer md:col-span-1 md:row-span-1">
+        <img 
+          src="/images/gallery/product-lifestyle-5.jpg"
+          alt="Heat in Action 5"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextElementSibling.style.display = 'flex';
+          }}
+        />
+        <div className="hidden w-full h-full bg-orange-500 items-center justify-center text-8xl text-white rounded-2xl">🌶️</div>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* CONTACT - Minimal Clean */}
       <section id="contact" className="py-24 px-6 bg-white">
