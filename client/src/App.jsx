@@ -570,7 +570,7 @@ function App() {
                   </div>
 
                   <button
-                    onClick={() => window.open(`https://wa.me/27626456655?text=Order Total: R${getTotal()}`, '_blank')}
+                    onClick={() => window.open(`https://wa.me/277113462385?text=Order Total: R${getTotal()}`, '_blank')}
                     className="w-full py-4 bg-green-600 hover:bg-green-700 rounded-full font-semibold text-lg text-white transition-all flex items-center justify-center space-x-2"
                   >
                     <Phone size={20} />
