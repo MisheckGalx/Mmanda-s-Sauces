@@ -249,7 +249,7 @@ function App() {
                   Inspired by my father's legendary chilli sauces, I began crafting my own, guided by family, passion, and creativity.
                 </p>
                 <p className="font-semibold text-black text-lg">
-                  Every bottle carries flavour, family, and heart crafted to bring people together.Mmanda’s sauces are organic, with no artificial ingredients, thickeners or preservatives
+                  Every bottle carries flavour, family, and heart crafted to bring people together. Mmanda’s sauces are organic, with no artificial ingredients, thickeners or preservatives.
                 </p>
               </div>
             </div>
