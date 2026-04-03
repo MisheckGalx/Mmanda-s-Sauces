@@ -476,49 +476,92 @@ function App() {
   </div>
 </section>
 
-      {/* CONTACT - Minimal Clean */}
-      <section id="contact" className="py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+      {/* ========== CONTACT SECTION ========== */}
+      <section id="contact" className="min-h-screen py-20 px-4 bg-black">
+        <div className="max-w-6xl mx-auto">
+          
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold mb-3 text-black tracking-tight">
-              Let's Talk Flavors
+            <div className="inline-block mb-4 px-4 py-2 bg-green-600/20 rounded-full border border-green-500/30">
+              <p className="text-sm text-green-400">Get In Touch</p>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Let's Talk
             </h2>
-            <p className="text-lg text-gray-600">Questions, partnerships, bulk orders, or just a love note for the heat we're always happy to hear from you.</p>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Questions, partnerships, bulk orders, or just a love note for the heat — 
+              we're always happy to hear from you.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <button
-              onClick={() => window.open('tel:+27711346238')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-green-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Phone size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Phone</div>
-              <div className="text-base font-semibold text-black">+27 71 134 6238</div>
-            </button>
+          <div className="grid md:grid-cols-2 gap-12">
+            
+            {/* Contact Info */}
+            <div className="space-y-6">
+              {[
+                { icon: <Phone size={24} />, title: 'Phone', value: '+27 71 134 6238', link: 'tel:+27 71 134 6238' },
+                { icon: <Mail size={24} />, title: 'Email', value: 'info@mmandas.com', link: 'mailto:info@mmandas.com' },
+                { icon: <MapPin size={24} />, title: 'Location', value: 'Clayville, South Africa', link: null },
+                { icon: <Instagram size={24} />, title: 'Instagram', value: '@mmandas_sauces', link: 'https://www.instagram.com/mmandas_sauces' }
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-start space-x-4 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-red-500/50 transition-all"
+                >
+                  <div className="p-3 bg-gradient-to-r from-red-600 to-orange-600 rounded-lg">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <div className="text-sm text-gray-400 mb-1">{item.title}</div>
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-white hover:text-red-400 transition-colors">
+                        {item.value}
+                      </a>
+                    ) : (
+                      <div className="text-lg font-semibold">{item.value}</div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
 
-            <button
-              onClick={() => window.open('mailto:info@mmandas.com')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-orange-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Mail size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Email</div>
-              <div className="text-base font-semibold text-black">info@mmandas.com</div>
-            </button>
+            {/* Contact Form */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700">
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Your Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your full name"
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-red-500 focus:outline-none transition-colors"
+                  />
+                </div>
 
-            <button
-              onClick={() => window.open('https://instagram.com/mmandas_sauces', '_blank')}
-              className="group p-8 bg-white rounded-2xl transition-all duration-300 hover:shadow-lg text-center border border-gray-200"
-            >
-              <div className="inline-flex p-4 bg-pink-500 rounded-full mb-4 group-hover:scale-110 transition-transform">
-                <Instagram size={24} className="text-white" />
-              </div>
-              <div className="text-xs font-semibold text-gray-500 mb-1 uppercase tracking-wide">Instagram</div>
-              <div className="text-base font-semibold text-black">mmandas_sauces</div>
-            </button>
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Email Address</label>
+                  <input
+                    type="email"
+                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-red-500 focus:outline-none transition-colors"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Your Message</label>
+                  <textarea
+                    rows="5"
+                    placeholder="Tell us how we can help you..."
+                    className="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-red-500 focus:outline-none transition-colors resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full py-4 bg-gradient-to-r from-red-600 to-orange-600 rounded-lg font-bold text-lg hover:shadow-lg transition-all"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
