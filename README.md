@@ -2,8 +2,6 @@
 
 
 
-https://demo.mmandas.com
-
 **Premium handcrafted hot sauces from Clayville, South Africa**  
 *Pure flavor. No artificial ingredients. No preservatives.*
 
